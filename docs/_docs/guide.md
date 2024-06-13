@@ -14,4 +14,6 @@ This is the guide section.
 
 ## Examples
 
+{{ site.messages.scambanner }}
+
 Here are some examples.

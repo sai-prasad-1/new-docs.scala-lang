@@ -1,0 +1,8 @@
+category: Standard Library
+description: "Guides and overviews covering the Scala standard library."
+overviews:
+  - title: Scala Collections
+    by: Martin Odersky and Julien Richard-Foy
+    icon: sitemap
+    url: "collections-2.13/introduction.html"
+    description: "Scala's Collection Library."

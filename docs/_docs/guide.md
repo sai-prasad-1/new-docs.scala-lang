@@ -14,6 +14,11 @@ This is the guide section.
 
 ## Examples
 
-{{ site.messages.scambanner }}
+{% assign a=10 %}
+{% assign b=20 %}
+
+
+{{a}} + {{b}} = {{a}}
+
 
 Here are some examples.

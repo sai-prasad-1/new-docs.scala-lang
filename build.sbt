@@ -18,6 +18,7 @@ lazy val root = project
     Compile / doc / scalacOptions ++= Seq(
       "-siteroot", "docs",
       "-project", "ScalaDocSiteBuilder",
-      "-project-version", "0.1.0-SNAPSHOT"
+      "-project-version", "0.1.0-SNAPSHOT",
+      "-quick-links", "api::API",
     )
   )

@@ -28,7 +28,7 @@ The instructions below cover both Scala 2 and Scala 3.
 
 ## Resources For Newcomers
 
-{% include inner-documentation-sections.html links=page.newcomer_resources %}
+{% include inner-documentation-sections.html links=page.newcomer_resources  %}
 
 ##  Install Scala on your computer
 
@@ -37,6 +37,7 @@ We recommend using the Scala installer tool "Coursier" that automatically instal
 
 
 ### Using the Scala Installer (recommended way)
+{{site['setup-scala'].linux-x86-64}}
 
 The Scala installer is a tool named [Coursier](https://get-coursier.io/docs/cli-overview), whose main command is named `cs`.
 It ensures that a JVM and standard Scala tools are installed on your system.
@@ -49,25 +50,42 @@ Install it on your system with the following instructions.
 <!-- macOS -->
 {% tab macOS for=install-cs-setup-tabs %}
 Run the following command in your terminal, following the on-screen instructions:
+```
+{{site['setup-scala'].macOS-brew}}
+```
 
-{% altDetails cs-setup-macos-nobrew  "Alternatively for Apple Silicon, or if you don't use Homebrew:" %}
-  On the Apple Silicon (M1, M2, …) architecture:
- 
-  Otherwise, on the x86-64 architecture:
- 
+{% altDetails cs-setup-macos-nobrew 'Alternatively for Apple Silicon, or if you dont use Homebrew:'  %}
+On the Apple Silicon (M1, M2, …) architecture:
+```
+{{site['setup-scala'].macOS-arm64}} 
+```
+Otherwise, on the x86-64 architecture:
+```
+{{site['setup-scala'].macOS-x86-64}} 
+```
 {% endaltDetails %}
+
+
 {% endtab %}
 <!-- end macOS -->
 
 <!-- Linux -->
 {% tab Linux for=install-cs-setup-tabs %}
   Run the following command in your terminal, following the on-screen instructions.
+  On the x86-64 architecture:
+  ```
+  {{site['setup-scala'].linux-x86-64}} 
+  ```
+  Otherwise, on the ARM64 architecture:
+  ```
+  {{site['setup-scala'].linux-arm64}} 
+  ```
 {% endtab %}
 <!-- end Linux -->
 
 <!-- Windows -->
 {% tab Windows for=install-cs-setup-tabs %}
-  Download and execute [the Scala installer for Windows]({{site.data.setup-scala.windows-link}})
+  Download and execute [the Scala installer for Windows]({{site['setup-scala'].windows-link}})
   based on Coursier, and follow the on-screen instructions.
 {% endtab %}
 <!-- end Windows -->  
@@ -85,7 +103,7 @@ Run the following command in your terminal, following the on-screen instructions
 <!-- Alternative Detail - test the `scala` command -->
 {% altDetails testing-your-setup 'Testing your setup' %}
 Check your setup with the command `scala -version`, which should output:
-```bash
+```sh
 $ scala -version
 Scala code runner version {{site.scala-3-version}} -- Copyright 2002-2022, LAMP/EPFL
 ```
@@ -112,6 +130,14 @@ For more information about `cs`, read
 > this is usually not an issue because most projects use a build tool that will
 > use the correct version of Scala irrespective of the one installed "globally".
 > Nevertheless, you can always launch a specific version of Scala using
+> ```
+> $ cs launch scala:{{ site.scala-version }}
+> $ cs launch scalac:{{ site.scala-version }}
+> ```
+> If you prefer Scala 2 to be run by default, you can force that version to be installed with:
+> ```
+> $ cs install scala:{{ site.scala-version }} scalac:{{ site.scala-version }}
+> ```
 
 
 ### ...or manually

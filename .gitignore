@@ -3,7 +3,6 @@
 
 # sbt specific
 dist/*
-target/
 lib_managed/
 src_managed/
 project/boot/
@@ -30,3 +29,8 @@ metals.sbt
 .idea
 .idea_modules
 /.worksheet/
+
+/target/*
+!/target/*/api
+!/target/*/api/**
+!/target/scala-3.5.1-RC1-bin-SNAPSHOT/api

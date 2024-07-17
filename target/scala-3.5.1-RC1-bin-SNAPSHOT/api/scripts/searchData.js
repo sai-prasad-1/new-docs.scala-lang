@@ -6,5 +6,4 @@ pages = [{"l":"index.html#","e":false,"i":"","n":"ScalaDocSiteBuilder","t":"Scal
 {"l":"$lessempty$greater$/StringUtils$.html#reverse-fffff2ca","e":false,"i":"","n":"reverse","t":"reverse(s: String): String","d":"StringUtils","k":"def","x":""},
 {"l":"$lessempty$greater$/StringUtils$.html#toUpperCase-fffff2ca","e":false,"i":"","n":"toUpperCase","t":"toUpperCase(s: String): String","d":"StringUtils","k":"def","x":""},
 {"l":"docs/index.html#","e":false,"i":"","n":"ScalaDocSiteBuilder","t":"ScalaDocSiteBuilder","d":"","k":"static","x":""},
-{"l":"docs/getting-started.html#","e":false,"i":"","n":"Getting Started","t":"Getting Started","d":"","k":"static","x":""},
-{"l":"docs/guide.html#","e":false,"i":"","n":"Guide","t":"Guide","d":"","k":"static","x":""}];
+{"l":"docs/getting-started.html#","e":false,"i":"","n":"Getting Started","t":"Getting Started","d":"","k":"static","x":""}];

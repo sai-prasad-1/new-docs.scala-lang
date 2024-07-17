@@ -1,7 +1,20 @@
 ---
-layout: main
+layout: singlepage-overview
 title: Getting Started
+newcomer_resources:
+  - title: Are You Coming From Java?
+    description: What you should know to get to speed with Scala after your initial setup.
+    icon: "fa fa-coffee"
+    link: /tutorials/scala-for-java-programmers.html
+  - title: Scala in the Browser
+    description: >
+      To start experimenting with Scala right away, use "Scastie" in your browser.
+    icon: "fa fa-cloud"
+    link: https://scastie.scala-lang.org/pEBYc5VMT02wAGaDrfLnyw
+extraCSS : ["./styles/getting-started.css"]
+
 ---
+
 
 The instructions below cover both Scala 2 and Scala 3.
 
@@ -13,11 +26,15 @@ The instructions below cover both Scala 2 and Scala 3.
 [our Discord](https://discord.com/invite/scala).*
 {% endaltDetails %}
 
+## Resources For Newcomers
+
+{% include inner-documentation-sections.html links=page.newcomer_resources %}
 
 ##  Install Scala on your computer
 
 Installing Scala means installing various command-line tools such as the Scala compiler and build tools.
 We recommend using the Scala installer tool "Coursier" that automatically installs all the requirements, but you can still manually install each tool.
+
 
 ### Using the Scala Installer (recommended way)
 
@@ -32,9 +49,12 @@ Install it on your system with the following instructions.
 <!-- macOS -->
 {% tab macOS for=install-cs-setup-tabs %}
 Run the following command in your terminal, following the on-screen instructions:
+
 {% altDetails cs-setup-macos-nobrew  "Alternatively for Apple Silicon, or if you don't use Homebrew:" %}
   On the Apple Silicon (M1, M2, …) architecture:
+ 
   Otherwise, on the x86-64 architecture:
+ 
 {% endaltDetails %}
 {% endtab %}
 <!-- end macOS -->
@@ -42,24 +62,6 @@ Run the following command in your terminal, following the on-screen instructions
 <!-- Linux -->
 {% tab Linux for=install-cs-setup-tabs %}
   Run the following command in your terminal, following the on-screen instructions.
-
-  ```sh
-  curl -L https://git.io/coursier-cli | sh
-
-  # or, if you have wget:
-  wget -qO- https://git.io/coursier-cli | sh
-
-  # or, if you have cURL:
-  curl -fLo cs https://git.io/coursier-cli && chmod +x cs
-  ./cs setup
-  ```
-
-  On the
-
-
-  
-
-  On the x86-64 architecture:
 {% endtab %}
 <!-- end Linux -->
 
@@ -68,24 +70,26 @@ Run the following command in your terminal, following the on-screen instructions
   Download and execute [the Scala installer for Windows]({{site.data.setup-scala.windows-link}})
   based on Coursier, and follow the on-screen instructions.
 {% endtab %}
-<!-- end Windows -->
+<!-- end Windows -->  
 
 <!-- Other -->
-{% tab Other for=install-cs-setup-tabs  %}
-  <noscript>
-    <p><span style="font-style:italic;">JavaScript is disabled, click the tab relevant for your OS.</span></p>
-  </noscript>
+{% tab Other for=install-cs-setup-tabs defaultTab %}
   Follow the documentation from Coursier on
     [how to install and run `cs setup`](https://get-coursier.io/docs/cli-installation).
 {% endtab %}
 <!-- end Other -->
+
 {% endtabs %}
+<!-- End tabs -->
 
-
-> <i class="fa fa-info"></i>&nbsp;&nbsp; You may need to restart your terminal, log out,
-> or reboot in order for the changes to take effect.
-
-
+<!-- Alternative Detail - test the `scala` command -->
+{% altDetails testing-your-setup 'Testing your setup' %}
+Check your setup with the command `scala -version`, which should output:
+```bash
+$ scala -version
+Scala code runner version {{site.scala-3-version}} -- Copyright 2002-2022, LAMP/EPFL
+```
+{% endaltDetails %}
 <!-- end Alternative Detail -->
 
 
@@ -144,7 +148,8 @@ To create a new Scala project with sbt:
    create a project called "hello-world".
 1. Let's take a look at what just got generated:
 
-```
+
+```scala
 - hello-world
     - project (sbt uses this for its own files)
         - build.properties

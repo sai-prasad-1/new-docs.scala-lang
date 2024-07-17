@@ -1,0 +1,29 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(doc, Some(f9498dff-56cc-4eca-927b-928270f0888a), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / doc[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/saiprasad/Documents/GSOC/scaladocsitebuilder/target/scala-3.5.1-RC1-bin-SNAPSHOT/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation to /home/saiprasad/Documents/GSOC/scaladocsitebuilder/target/scala-3.5.1-RC1-bin-SNAPSHOT/api...[0m
+[0m[[0m[33mwarn[0m] [0m[0mFlag -project set repeatedly[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/overviews/jdk-compatibility/overview.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/scala3/book/tools-sbt.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/overviews/scala-book/scala-build-tool-sbt.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/scala3/book/introduction.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/overviews/scala-book/introduction.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/tour/tour-of-scala.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/learn.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/books.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started.md --------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started.md: Unable to resolve link '/scala3/guides/migration/compatibility-intro.html'[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation successful.[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 5 s, completed 05-Jul-2024, 2:41:42 pm[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

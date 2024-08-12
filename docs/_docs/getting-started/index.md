@@ -11,13 +11,13 @@ newcomer_resources:
       To start experimenting with Scala right away, use "Scastie" in your browser.
     icon: "fa fa-cloud"
     link: https://scastie.scala-lang.org/pEBYc5VMT02wAGaDrfLnyw
+languages: ['ja','ru','uk']
 extraCSS : ["./styles/getting-started.css"]
 
 ---
 
 
 The instructions below cover both Scala 2 and Scala 3.
-
 
 ## Resources For Newcomers
 
@@ -29,6 +29,7 @@ The instructions below cover both Scala 2 and Scala 3.
 ## Resources For Newcomers
 
 {% include inner-documentation-sections.html links=page.newcomer_resources  %}
+{% language_picker languages=page.languages %}
 
 ##  Install Scala on your computer
 
@@ -37,7 +38,8 @@ We recommend using the Scala installer tool "Coursier" that automatically instal
 
 
 ### Using the Scala Installer (recommended way)
-{{site['setup-scala'].linux-x86-64}}
+{{ page.languages }}
+
 
 The Scala installer is a tool named [Coursier](https://get-coursier.io/docs/cli-overview), whose main command is named `cs`.
 It ensures that a JVM and standard Scala tools are installed on your system.
@@ -51,8 +53,9 @@ Install it on your system with the following instructions.
 {% tab macOS for=install-cs-setup-tabs %}
 Run the following command in your terminal, following the on-screen instructions:
 ```
-{{site['setup-scala'].macOS-brew}}
+{{site}}
 ```
+setup-scala.macOS-brew
 
 {% altDetails cs-setup-macos-nobrew 'Alternatively for Apple Silicon, or if you dont use Homebrew:'  %}
 On the Apple Silicon (M1, M2, …) architecture:
@@ -74,7 +77,7 @@ Otherwise, on the x86-64 architecture:
   Run the following command in your terminal, following the on-screen instructions.
   On the x86-64 architecture:
   ```
-  {{site['setup-scala'].linux-x86-64}} 
+  {{site.data['setup-scala'].linux-x86-64}} 
   ```
   Otherwise, on the ARM64 architecture:
   ```

@@ -3,3 +3,13 @@ languages:
     name: English
   - code: us
     name: American English
+  - code: zh-cn
+    name: 中文
+  - code: uk
+    name: Українська
+  - code: ru
+    name: Русский
+  - code: ja
+    name: 日本語
+  - code: de
+    name: Deutsch

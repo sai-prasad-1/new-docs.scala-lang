@@ -1,6 +1,18 @@
-sidebar:
-  - title: Home
-    url: index.html
+index: index.md
+subsection:
   - title: Getting Started
-    url: getting-started.html
+    directory: getting-started
+    index: getting-started/intelij-track/building-a-scala-project-with-intellij-and-sbt.md
+    subsection:
+      - title: Intelij Track
+        index: intelij-track/building-a-scala-project-with-intellij-and-sbt.md
+        subsection:
+          - page: intelij-track/getting-started-with-scala-in-intellij.md
+          - page: intelij-track/testing-scala-in-intellij-with-scalatest.md
+      - title: SBT Track
+        index: sbt-track/building-a-scala-project-with-intellij-and-sbt.md
+        subsection:
+          - page: sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.md
+          - page: sbt-track/testing-scala-with-sbt-on-the-command-line.md
+      
 

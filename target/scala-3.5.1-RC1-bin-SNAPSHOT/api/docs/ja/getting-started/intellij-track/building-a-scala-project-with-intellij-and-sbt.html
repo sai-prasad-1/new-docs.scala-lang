@@ -1,0 +1,113 @@
+<!DOCTYPE html><html data-pathToRoot="../../../../" data-rawLocation="docs/ja/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt" data-dynamicSideMenu="false"><head><meta charset="utf-8"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta><title>Intellij で sbt を使って Scala プロジェクトをビルドする</title><link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico"></link><script type="text/javascript" src="../../../../scripts/theme.js"></script><script type="text/javascript" src="../../../../scripts/searchData.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/scastieConfiguration.js" defer="true"></script><link rel="stylesheet" href="../../../../styles/theme/bundle.css"></link><link rel="stylesheet" href="../../../../styles/theme/components/bundle.css"></link><link rel="stylesheet" href="../../../../styles/theme/components/button/bundle.css"></link><link rel="stylesheet" href="../../../../styles/theme/layout/bundle.css"></link><link rel="stylesheet" href="../../../../styles/nord-light.css"></link><link rel="stylesheet" href="../../../../styles/dotty-icons.css"></link><link rel="stylesheet" href="../../../../styles/filter-bar.css"></link><link rel="stylesheet" href="../../../../styles/code-snippets.css"></link><link rel="stylesheet" href="../../../../styles/searchbar.css"></link><link rel="stylesheet" href="../../../../styles/social-links.css"></link><link rel="stylesheet" href="../../../../styles/versions-dropdown.css"></link><link rel="stylesheet" href="../../../../styles/content-contributors.css"></link><link rel="stylesheet" href="../../../../styles/fontawesome.css"></link><link rel="stylesheet" href="../../../../styles/staticsitestyles.css"></link><script type="text/javascript" src="../../../../scripts/staticsite/alt-details.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/staticsite/tabs-block.js" defer="true"></script><script type="text/javascript" src="../../../../hljs/highlight.pack.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/hljs-scala3.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/ux.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/common/component.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/common/utils.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/components/FilterBar.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/components/DocumentableList.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/components/Input.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/components/FilterGroup.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/components/Filter.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/scaladoc-scalajs.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/contributors.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/staticsite/main.js" defer="true"></script><script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" defer="true"></script><script type="text/javascript" src="https://d3js.org/d3.v6.min.js" defer="true"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/graphlib-dot@0.6.2/dist/graphlib-dot.min.js" defer="true"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dagre-d3/0.6.1/dagre-d3.min.js" defer="true"></script><script type="text/javascript" src="https://scastie.scala-lang.org/embedded.js" defer="true"></script><script type="text/javascript" src="../../../../scripts/data.js" defer="true"></script><script>var pathToRoot = "../../../../";</script></head><body><div id=""><div id="header" class="body-small"><div class="header-container-left"><a href="../../../../" class="logo-container"><span class="project-name h300">Scala Docs</span></a><span onclick="dropdownHandler(event)" class="text-button with-arrow" id="dropdown-trigger"><a><div class="projectVersion">0.1.0-SNAPSHOT</div></a></span><div id="version-dropdown" class="dropdown-menu"></div></div><div class="header-container-right"><button id="search-toggle" class="icon-button"></button><a href="https://docs.scala-lang.org/" class="text-button">Learn</a><a href="https://www.scala-lang.org/download/" class="text-button">Install</a><a href="https://scastie.scala-lang.org" class="text-button">Playground</a><a href="https://index.scala-lang.org" class="text-button">Find A Library</a><a href="https://www.scala-lang.org/community/" class="text-button">Community</a><a href="https://www.scala-lang.org/blog/" class="text-button">Blog</a><span id="theme-toggle" class="icon-button"></span><span id="mobile-menu-toggle" class="icon-button hamburger"></span></div></div><div id="mobile-menu"><div class="mobile-menu-header body-small"><span class="mobile-menu-logo"><span class="project-name h300">Scala Docs</span></span><button id="mobile-menu-close" class="icon-button close"></button></div><div class="mobile-menu-container body-medium"><input id="mobile-scaladoc-searchbar-input" class="scaladoc-searchbar-input" type="search" placeholder="Find anything"></input><a href="https://docs.scala-lang.org/" class="mobile-menu-item">Learn</a><a href="https://www.scala-lang.org/download/" class="mobile-menu-item">Install</a><a href="https://scastie.scala-lang.org" class="mobile-menu-item">Playground</a><a href="https://index.scala-lang.org" class="mobile-menu-item">Find A Library</a><a href="https://www.scala-lang.org/community/" class="mobile-menu-item">Community</a><a href="https://www.scala-lang.org/blog/" class="mobile-menu-item">Blog</a><span id="mobile-theme-toggle" class="mobile-menu-item mode"></span></div></div><span id="mobile-sidebar-toggle" class="floating-button"></span><div id="leftColumn" class="body-small"><div class="switcher-container"><a id="docs-nav-button" class="switcher h100 selected" href="../../../index.html">Docs</a><a id="api-nav-button" class="switcher h100 " href="../../../../index.html">API</a></div><nav id="docs-nav" class="side-menu"><div class="ni n0"><span class="nh de"><button class="ar icon-button "></button><a href="../../../getting-started/index.html"><span>Getting Started</span></a></span><div class="ni n1"><span class="nh de"><button class="ar icon-button "></button><a href="../../../getting-started/sbt-track/index.html"><span>index</span></a></span><div class="ni n2 "><span class="nh de"><a href="../../../getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html"><span>Getting Started with Scala and sbt on the Command Line</span></a></span></div><div class="ni n2 "><span class="nh de"><a href="../../../getting-started/sbt-track/testing-scala-with-sbt-on-the-command-line.html"><span>Testing Scala with sbt and ScalaTest on the Command Line</span></a></span></div></div><div class="ni n1"><span class="nh de"><button class="ar icon-button "></button><a href="../../../getting-started/intellij-track/index.html"><span>index</span></a></span><div class="ni n2 "><span class="nh de"><a href="../../../getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.html"><span>Building a Scala Project with IntelliJ and sbt</span></a></span></div><div class="ni n2 "><span class="nh de"><a href="../../../getting-started/intellij-track/getting-started-with-scala-in-intellij.html"><span>Getting Started with Scala in IntelliJ</span></a></span></div><div class="ni n2 "><span class="nh de"><a href="../../../getting-started/intellij-track/testing-scala-in-intellij-with-scalatest.html"><span>Testing Scala in IntelliJ with ScalaTest</span></a></span></div></div></div><div class="ni n0"><span class="nh de"><button class="ar icon-button "></button><a href="../../../scaladoc/index.html"><span>index</span></a></span><div class="ni n1 "><span class="nh de"><a href="../../../scaladoc/contribute.html"><span>Contributing to Scaladoc</span></a></span></div><div class="ni n1 "><span class="nh de"><a href="../../../scaladoc/generate.html"><span>Generating Scaladoc</span></a></span></div><div class="ni n1 "><span class="nh de"><a href="../../../scaladoc/overview.html"><span>Overview</span></a></span></div><div class="ni n1 "><span class="nh de"><a href="../../../scaladoc/for-library-authors.html"><span>Scaladoc for Library Authors</span></a></span></div><div class="ni n1 "><span class="nh de"><a href="../../../scaladoc/interface.html"><span>Using the Scaladoc Interface</span></a></span></div></div><div class="ni n0 expanded"><span class="nh h100 expanded cs de"><button class="ar icon-button expanded"></button><a href="../../index.html"><span>index</span></a></span><div class="ni n1 "><span class="nh de"><a href="../../cheatsheets/index.html"><span>Scala Cheatsheet</span></a></span></div><div class="ni n1"><span class="nh de"><button class="ar icon-button "></button><a href="../../tutorials/index.html"><span>index</span></a></span><div class="ni n2 "><span class="nh de"><a href="../../tutorials/scala-for-java-programmers.html"><span>JavaプログラマーのためのScalaチュートリアル</span></a></span></div></div><div class="ni n1 expanded"><span class="nh h100 expanded cs de"><button class="ar icon-button expanded"></button><a href="../index.html"><span>入門</span></a></span><div class="ni n2"><span class="nh de"><button class="ar icon-button "></button><a href="../sbt-track/index.html"><span>index</span></a></span><div class="ni n3 "><span class="nh de"><a href="../sbt-track/testing-scala-with-sbt-on-the-command-line.html"><span>コマンドラインで ScalaTest を使って Scala をテストする</span></a></span></div><div class="ni n3 "><span class="nh de"><a href="../sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html"><span>コマンドラインの sbt で Scala を始める</span></a></span></div></div><div class="ni n2 expanded"><span class="nh h100 expanded cs de"><button class="ar icon-button expanded"></button><a href="index.html"><span>index</span></a></span><div class="ni n3 "><span class="nh de"><a href="testing-scala-in-intellij-with-scalatest.html"><span>Intelij で ScalaTest を使って Scala をテストする</span></a></span></div><div class="ni n3 "><span class="nh de"><a href="getting-started-with-scala-in-intellij.html"><span>Intellij で Scala を始める</span></a></span></div><div class="ni n3 expanded"><span class="nh h100 selected de"><a href="#"><span>Intellij で sbt を使って Scala プロジェクトをビルドする</span></a></span></div></div></div></div></nav></div><div id="footer" class="body-small"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div><div id="scaladoc-searchBar"></div><div id="main"><div class="breadcrumbs container"><a href="../../../index.html">Scala Docs</a>/<a href="../../index.html">index</a>/<a href="../index.html">入門</a>/<a href="index.html">index</a>/<a href="building-a-scala-project-with-intellij-and-sbt.html">Intellij で sbt を使って Scala プロジェクトをビルドする</a></div><div id="content" class="body-medium"><div><div class="site-container">
+ <div id="site-header"></div>
+ <aside class="warning">
+  <div class="icon"></div>
+  <div class="content">
+   **⚠️ Beware of Scams**: since Feb 2024, scammers are using [fake Scala websites to sell courses](https://www.scala-lang.org/blog/2024/03/01/fake-scala-courses.html), please check you are using an official source.
+  </div>
+ </aside>
+ <div class="utility-bar">
+ </div>
+ <p>このチュートリアルでは、<a href="https://www.scala-sbt.org/1.x/docs/index.html">sbt</a> を使って Scala プロジェクトをビルドする方法を見ていきます。 sbtは、どのようなサイズの Scala プロジェクトでもコンパイル、実行、テストできる人気のツールです。 sbt（または Maven や Gradle）のようなビルドツールの使用は、1つ以上のコードファイルや依存関係のあるプロジェクトを作ったら、絶対不可欠になります。 <a href="getting-started-with-scala-in-intellij.html">最初のチュートリアル</a>を完了していることを前提とします。</p>
+ <section id="プロジェクトを作成-5">
+  <h2 class="h500"><a href="#プロジェクトを作成-5" class="anchor"></a>プロジェクトを作成</h2>
+  <p>このでは、Intellij でプロジェクトの作り方をお見せします。 ですが、コマンドラインのほうが快適でしたら、<a href="/ja/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html">Getting コマンドラインの sbt で Scala を始める</a> を試して、「Scala コードを記述」節に戻ってくるのをおすすめします。</p>
+  <ol>
+   <li>コマンドラインからプロジェクトを作っていなければ、Intellij を開き、"Create New Project" を選びます。 
+    <ul>
+     <li>左パネルで Scala を選び、右パネルで sbt を選びます。</li>
+     <li><strong>Next</strong> をクリックします</li>
+     <li>プロジェクトに <strong>SbtExampleProject</strong> と名前を付けます。</li>
+    </ul></li>
+   <li>コマンドラインですでにプロジェクトを作成していたら、Intelij を開き、<strong>Import Project</strong> を選んで、あなたのプロジェクトの <code>build.sbt</code> ファイルを開きます。</li>
+   <li><strong>JDK version</strong> が <code>1.8</code> で、<strong>sbt version</strong> が少なくとも <code>0.13.13</code> であることを確認します。</li>
+   <li><strong>Use auto-import</strong> を選びます。すると依存関係が利用可能であれば自動でダウンロードされます。</li>
+   <li><strong>Finish</strong> を選びます。</li>
+  </ol>
+ </section>
+ <section id="ディレクトリ構造を理解-1">
+  <h2 class="h500"><a href="#ディレクトリ構造を理解-1" class="anchor"></a>ディレクトリ構造を理解</h2>
+  <p>sbt は、より複雑なプロジェクトを構築すだしたら便利になるであろう多くのディレクトリを作成します。 今はそのほとんどを無視できますが、全部が何のためかをここでちらっと見ておきましょう。</p>
+  <div class="snippet mono-small-block">
+   <pre><code class="language-"><span line-number="1" class=""><span class="tooltip-container"></span>- .idea (IntelliJ ファイル)
+</span><span line-number="2" class=""><span class="tooltip-container"></span>- project (sbt のプラグインや追加設定)
+</span><span line-number="3" class=""><span class="tooltip-container"></span>- src (ソースファイル)
+</span><span line-number="4" class=""><span class="tooltip-container"></span>    - main (アプリケーションコード)
+</span><span line-number="5" class=""><span class="tooltip-container"></span>        - java (Java ソースファイル)
+</span><span line-number="6" class=""><span class="tooltip-container"></span>        - scala (Scala ソースファイル)
+</span><span line-number="7" class=""><span class="tooltip-container"></span>          ^-- 今はこれが必要なものの全てです
+</span><span line-number="8" class=""><span class="tooltip-container"></span>        - scala-2.12 (Scala 2.12 固有ファイル)
+</span><span line-number="9" class=""><span class="tooltip-container"></span>    - test (ユニットテスト)
+</span><span line-number="10" class=""><span class="tooltip-container"></span>- target (生成されたファイル)
+</span><span line-number="11" class=""><span class="tooltip-container"></span>- build.sbt (sbt のためのビルド定義ファイル)
+</span></code></pre>
+   <div class="buttons"></div>
+  </div>
+ </section>
+ <section id="scala-コードを記述-1">
+  <h2 class="h500"><a href="#scala-コードを記述-1" class="anchor"></a>Scala コードを記述</h2>
+  <ol>
+   <li>左の <strong>Project</strong> パネルで、<code>SbtExampleProject</code> =&gt; <code>src</code> =&gt; <code>main</code> を展開します。</li>
+   <li><code>scala</code> を右クリックし、<strong>New</strong> =&gt; <strong>Package</strong> を選択します。</li>
+   <li>パッケージに <code>example</code> と名前をつけ、<strong>OK</strong> をクリックします。</li>
+   <li>パッケージ <code>example</code> を右クリックし、<strong>New</strong> =&gt; <strong>Scala class</strong> をクリックします。</li>
+   <li>クラスに　<code>Main</code> と名前をつけ、<strong>Kind</strong> を <code>object</code> に変更します。</li>
+   <li>クラスのコードを次おように変更します。</li>
+  </ol>
+  <div class="snippet mono-small-block">
+   <pre><code class="language-"><span line-number="1" class=""><span class="tooltip-container"></span>@main def run() =
+</span><span line-number="2" class=""><span class="tooltip-container"></span>  val ages = Seq(42, 75, 29, 64)
+</span><span line-number="3" class=""><span class="tooltip-container"></span>  println(s"The oldest person is ${ages.max}")
+</span></code></pre>
+   <div class="buttons"></div>
+  </div>
+  <p>注：Intellij は Scala コンパイラーの独自実装を持っており、コードが間違っていると Intellij が示しても正しい場合がときどきあります。 コマンドラインで sbt がプロジェクトを実行できるかを常にチェックできます。。</p>
+ </section>
+ <section id="プロジェクトを実行-3">
+  <h2 class="h500"><a href="#プロジェクトを実行-3" class="anchor"></a>プロジェクトを実行</h2>
+  <ol>
+   <li><strong>Run</strong> メニューから、<strong>Edit configurations</strong> を選びます。</li>
+   <li><strong>+</strong> ボタンをクリックし、<strong>sbt Task</strong> を選びます</li>
+   <li>それに <code>Run the program</code> と名付けます。</li>
+   <li><strong>Tasks</strong> フィールドで、<code>~run</code> と入力します. <code>~</code> は、プロジェクトファイルへの変更を保存するたびに sbt にプロジェクトを再ビルド、再実行させます。</li>
+   <li><strong>OK</strong> をクリックします。</li>
+   <li><strong>Run</strong> メニューで、<strong>Run 'Run the program'</strong> をクリックします。</li>
+   <li>コードの <code>75</code> を <code>61</code> に変えて、コンソールで更新された出力を見ます。</li>
+  </ol>
+ </section>
+ <section id="依存関係を追加-3">
+  <h2 class="h500"><a href="#依存関係を追加-3" class="anchor"></a>依存関係を追加</h2>
+  <p>趣向を少し変えて、アプリに追加機能を加えるために公開ライブラリの使い方を見てみましょう。</p>
+  <p><code>build.sbt</code> を開き、以下のファイルを追加します。</p>
+  <div class="snippet mono-small-block">
+   <pre><code class="language-"><span line-number="1" class=""><span class="tooltip-container"></span>libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
+</span></code></pre>
+   <div class="buttons"></div>
+  </div>
+  <p>ここで <code>libraryDependencies</code> は依存関係の集合であり、<code>+=</code> を使うことにより、<a href="https://github.com/scala/scala-parser-combinators">scala-parser-combinators</a> への依存を、sbt が起動時に取得してくる依存関係の集合に加えています。 これで、どの Scala ファイルでも、<code>scala-parser-combinator</code> にあるクラスやオブジェクトなどを通常のインポートでインポートできます。</p>
+  <p>さらなる公開ライブラリは、Scala ライブラリインデックス <a href="https://index.scala-lang.org/">Scaladex</a> で見つけられます。 そこでは上述のような依存関係情報をコピーでき、<code>build.sbt</code> ファイルにペーストできます。</p>
+ </section>
+ <section id="次のステップ-7">
+  <h2 class="h500"><a href="#次のステップ-7" class="anchor"></a>次のステップ</h2>
+  <p><strong>Intellij で入門</strong> シリーズの次のチュートリアルに進み、<a href="testing-scala-in-intellij-with-scalatest.html">Intelij で ScalaTest を使って Scala をテストする</a>方法を学びます。</p>
+  <p><strong>あるいは</strong></p>
+  <ul>
+   <li>インタラクティブなオンラインコース <a href="https://www.scala-exercises.org/scala_tutorial">Scala Exercises</a> で Scala を学習します。</li>
+   <li><a href="/ja//tour/tour-of-scala.html">Scala ツアー</a> で Scala の特徴を一口大のサイズでステップバイステップに学びます。</li>
+  </ul>
+ </section>
+ <div class="divider"></div>
+ <nav class="arrow-navigation" aria-label="Page navigation">
+  <div>
+   <span class="body-small">Previous</span> <a rel="prev" href="getting-started-with-scala-in-intellij.html" aria-keyshortcuts="Left" class="body-medium"> <span class="body-medium">Intellij で Scala を始める</span> </a>
+  </div>
+ </nav>
+ <div class="content-contributors hidden">
+  <h1 class="h200">Contributors to this page</h1>
+  <div id="documentation-contributors" class="contributors-container"></div>
+  <div class="content-contributors">
+   <h3>Contributors to this page:</h3>
+   <div id="contributors" class="contributors-container"></div>
+  </div>
+ </div>
+</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#プロジェクトを作成-5">プロジェクトを作成</a></li><li><a href="#ディレクトリ構造を理解-1">ディレクトリ構造を理解</a></li><li><a href="#scala-コードを記述-1">Scala コードを記述</a></li><li><a href="#プロジェクトを実行-3">プロジェクトを実行</a></li><li><a href="#依存関係を追加-3">依存関係を追加</a></li><li><a href="#次のステップ-7">次のステップ</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

@@ -1,0 +1,52 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(doc, Some(6c096710-d5ef-4927-800d-d5e73f27b9fc), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / doc[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation to /home/saiprasad/Documents/GSOC/scaladocsitebuilder/target/scala-3.5.1-RC1-bin-SNAPSHOT/api...[0m
+[0m[[0m[33mwarn[0m] [0m[0mFlag -project set repeatedly[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/tutorials/scala-for-java-programmers.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/overviews/jdk-compatibility/overview.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/scala3/book/tools-sbt.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/overviews/scala-book/scala-build-tool-sbt.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/scala3/book/introduction.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/overviews/scala-book/introduction.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/tour/tour-of-scala.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/learn.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/books.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/index.md --------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/index.md: Unable to resolve link '/scala3/guides/migration/compatibility-intro.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.md [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.md: Unable to resolve link '/tour/tour-of-scala.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.md [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.md: Unable to resolve link '/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.md [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.md: Unable to resolve link '/scala3/book/introduction.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.md [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.md: Unable to resolve link '/tour/tour-of-scala.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/scaladoc/contribute.md ----------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/scaladoc/contribute.md: Unable to resolve link '/overviews/scaladoc/generate.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/scaladoc/contribute.md ----------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/scaladoc/contribute.md: Unable to resolve link '/overviews/scaladoc/basics.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/scaladoc/generate.md ------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/scaladoc/generate.md: Unable to resolve link '/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/scaladoc/overview.md ------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/scaladoc/overview.md: Unable to resolve link '/overviews/scaladoc/interface.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/scaladoc/overview.md ------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/scaladoc/overview.md: Unable to resolve link '/overviews/scaladoc/for-library-authors.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/scaladoc/overview.md ------------------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/scaladoc/overview.md: Unable to resolve link '/overviews/scaladoc/generate.html'[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: docs/_docs/scaladoc/for-library-authors.md -------------------------[0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/saiprasad/Documents/GSOC/scaladocsitebuilder/docs/_docs/scaladoc/for-library-authors.md: Unable to resolve link '/style/scaladoc.html'[0m
+[0m[[0m[0minfo[0m] [0m[0mMain Scala API documentation successful.[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 2 s, completed 20-Aug-2024, 4:48:44 am[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

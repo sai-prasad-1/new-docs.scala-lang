@@ -17,8 +17,8 @@ lazy val root = project
     // Add the scalacOptions for Scaladoc
     Compile / doc / scalacOptions ++= Seq(
       "-siteroot", "docs",
-      "-project", "ScalaDocSiteBuilder",
+      "-project", "Scala Docs",
       "-project-version", "0.1.0-SNAPSHOT",
-      "-quick-links", "api::API",
+      "-quick-links", "Learn::https://docs.scala-lang.org/,Install::https://www.scala-lang.org/download/,Playground::https://scastie.scala-lang.org,Find A Library::https://index.scala-lang.org,Community::https://www.scala-lang.org/community/,Blog::https://www.scala-lang.org/blog/,"
     )
   )

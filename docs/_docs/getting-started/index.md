@@ -11,13 +11,12 @@ newcomer_resources:
       To start experimenting with Scala right away, use "Scastie" in your browser.
     icon: "fa fa-cloud"
     link: https://scastie.scala-lang.org/pEBYc5VMT02wAGaDrfLnyw
-languages: ['ja','ru','uk']
-extraCSS : ["./styles/getting-started.css"]
-
+languages: ['ja','ru','uk','zh-cn']
 ---
 
 
 The instructions below cover both Scala 2 and Scala 3.
+
 
 ## Resources For Newcomers
 
@@ -29,7 +28,7 @@ The instructions below cover both Scala 2 and Scala 3.
 ## Resources For Newcomers
 
 {% include inner-documentation-sections.html links=page.newcomer_resources  %}
-{% language_picker languages=page.languages %}
+
 
 ##  Install Scala on your computer
 

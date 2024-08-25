@@ -12,8 +12,8 @@
  </div>
  <p>There are multiple libraries and testing methodologies for Scala, but in this tutorial, we'll demonstrate one popular option from the ScalaTest framework called <a href="https://www.scalatest.org/getting_started_with_fun_suite">FunSuite</a>.</p>
  <p>This assumes you know <a href="building-a-scala-project-with-intellij-and-sbt.html">how to build a project in IntelliJ</a>.</p>
- <section id="setup-51">
-  <h2 class="h500"><a href="#setup-51" class="anchor"></a>Setup</h2>
+ <section id="setup-3">
+  <h2 class="h500"><a href="#setup-3" class="anchor"></a>Setup</h2>
   <ol>
    <li>Create an sbt project in IntelliJ.</li>
    <li>Add the ScalaTest dependency: 
@@ -41,8 +41,8 @@
     </div></li>
   </ol>
  </section>
- <section id="creating-a-test-25">
-  <h2 class="h500"><a href="#creating-a-test-25" class="anchor"></a>Creating a test</h2>
+ <section id="creating-a-test-1">
+  <h2 class="h500"><a href="#creating-a-test-1" class="anchor"></a>Creating a test</h2>
   <ol>
    <li>On the project pane on the left, expand <code>src</code> =&gt; <code>test</code>.</li>
    <li>Right-click on <code>scala</code> and select <strong>New</strong> =&gt; <strong>Scala class</strong>.</li>
@@ -61,8 +61,8 @@
    <li>In the source code, right-click <code>CubeCalculatorTest</code> and select <strong>Run 'CubeCalculatorTest'</strong>.</li>
   </ol>
  </section>
- <section id="understanding-the-code-25">
-  <h2 class="h500"><a href="#understanding-the-code-25" class="anchor"></a>Understanding the code</h2>
+ <section id="understanding-the-code-1">
+  <h2 class="h500"><a href="#understanding-the-code-1" class="anchor"></a>Understanding the code</h2>
   <p>Let's go over this line by line:</p>
   <ul>
    <li><code>class CubeCalculatorTest</code> means we are testing the object <code>CubeCalculator</code></li>
@@ -73,15 +73,15 @@
    <li><code>CubeCalculator.cube(3) === 27</code> checks whether the output of the <code>cube</code> function is indeed 27. The <code>===</code> is part of ScalaTest and provides clean error messages.</li>
   </ul>
  </section>
- <section id="adding-another-test-case-51">
-  <h2 class="h500"><a href="#adding-another-test-case-51" class="anchor"></a>Adding another test case</h2>
+ <section id="adding-another-test-case-3">
+  <h2 class="h500"><a href="#adding-another-test-case-3" class="anchor"></a>Adding another test case</h2>
   <ol>
    <li>Add another <code>assert</code> statement after the first one that checks for the cube of <code>0</code>.</li>
    <li>Re-run the test again by right-clicking <code>CubeCalculatorTest</code> and selecting 'Run <strong>CubeCalculatorTest</strong>'.</li>
   </ol>
  </section>
- <section id="conclusion-51">
-  <h2 class="h500"><a href="#conclusion-51" class="anchor"></a>Conclusion</h2>
+ <section id="conclusion-3">
+  <h2 class="h500"><a href="#conclusion-3" class="anchor"></a>Conclusion</h2>
   <p>You've seen one way to test your Scala code. You can learn more about ScalaTest's FunSuite on the <a href="https://www.scalatest.org/getting_started_with_fun_suite">official website</a>.</p>
  </section>
  <div class="divider"></div>
@@ -101,4 +101,4 @@
    <div id="contributors" class="contributors-container"></div>
   </div>
  </div>
-</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#setup-51">Setup</a></li><li><a href="#creating-a-test-25">Creating a test</a></li><li><a href="#understanding-the-code-25">Understanding the code</a></li><li><a href="#adding-another-test-case-51">Adding another test case</a></li><li><a href="#conclusion-51">Conclusion</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
+</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#setup-3">Setup</a></li><li><a href="#creating-a-test-1">Creating a test</a></li><li><a href="#understanding-the-code-1">Understanding the code</a></li><li><a href="#adding-another-test-case-3">Adding another test case</a></li><li><a href="#conclusion-3">Conclusion</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

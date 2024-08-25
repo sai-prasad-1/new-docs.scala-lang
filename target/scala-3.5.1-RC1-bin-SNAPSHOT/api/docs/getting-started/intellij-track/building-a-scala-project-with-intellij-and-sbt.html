@@ -11,8 +11,8 @@
   <script>var availableLanguages = ['en', 'ja', 'ru', 'uk']; console.log('Available languages: ', availableLanguages);</script>
  </div>
  <p>In this tutorial, we'll see how to build a Scala project using <a href="https://www.scala-sbt.org/1.x/docs/index.html">sbt</a>. sbt is a popular tool for compiling, running, and testing Scala projects of any size. Using a build tool such as sbt (or Maven/Gradle) becomes essential once you create projects with dependencies or more than one code file. We assume you've completed the <a href="getting-started-with-scala-in-intellij.html">first tutorial</a>.</p>
- <section id="creating-the-project-50">
-  <h2 class="h500"><a href="#creating-the-project-50" class="anchor"></a>Creating the project</h2>
+ <section id="creating-the-project-2">
+  <h2 class="h500"><a href="#creating-the-project-2" class="anchor"></a>Creating the project</h2>
   <p>In this section, we'll show you how to create the project in IntelliJ. However, if you're comfortable with the command line, we recommend you try <a href="/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html">Getting Started with Scala and sbt on the Command Line</a> and then come back here to the section "Writing Scala code".</p>
   <ol>
    <li>If you didn't create the project from the command line, open up IntelliJ and select "Create New Project"</li>
@@ -29,8 +29,8 @@
    <li>Select <strong>Finish</strong></li>
   </ol>
  </section>
- <section id="understanding-the-directory-structure-25">
-  <h2 class="h500"><a href="#understanding-the-directory-structure-25" class="anchor"></a>Understanding the directory structure</h2>
+ <section id="understanding-the-directory-structure-1">
+  <h2 class="h500"><a href="#understanding-the-directory-structure-1" class="anchor"></a>Understanding the directory structure</h2>
   <p>sbt creates many directories which can be useful once you start building more complex projects. You can ignore most of them for now but here's a glance at what everything is for:</p>
   <div class="snippet mono-small-block">
    <pre><code class="language-"><span line-number="1" class=""><span class="tooltip-container"></span>- .idea (IntelliJ files)
@@ -47,8 +47,8 @@
    <div class="buttons"></div>
   </div>
  </section>
- <section id="writing-scala-code-25">
-  <h2 class="h500"><a href="#writing-scala-code-25" class="anchor"></a>Writing Scala code</h2>
+ <section id="writing-scala-code-1">
+  <h2 class="h500"><a href="#writing-scala-code-1" class="anchor"></a>Writing Scala code</h2>
   <ol>
    <li>On the <strong>Project</strong> panel on the left, expand <code>SbtExampleProject</code> =&gt; <code>src</code> =&gt; <code>main</code></li>
    <li>Right-click <code>scala</code> and select <strong>New</strong> =&gt; <strong>Package</strong></li>
@@ -66,8 +66,8 @@
   </div>
   <p>Note: IntelliJ has its own implementation of the Scala compiler, and sometimes your code is correct even though IntelliJ indicates otherwise. You can always check to see if sbt can run your project on the command line.</p>
  </section>
- <section id="running-the-project-51">
-  <h2 class="h500"><a href="#running-the-project-51" class="anchor"></a>Running the project</h2>
+ <section id="running-the-project-3">
+  <h2 class="h500"><a href="#running-the-project-3" class="anchor"></a>Running the project</h2>
   <ol>
    <li>From the <strong>Run</strong> menu, select <strong>Edit configurations</strong></li>
    <li>Click the <strong>+</strong> button and select <strong>sbt Task</strong>.</li>
@@ -78,8 +78,8 @@
    <li>In the code, change <code>75</code> to <code>61</code> and look at the updated output in the console.</li>
   </ol>
  </section>
- <section id="adding-a-dependency-51">
-  <h2 class="h500"><a href="#adding-a-dependency-51" class="anchor"></a>Adding a dependency</h2>
+ <section id="adding-a-dependency-3">
+  <h2 class="h500"><a href="#adding-a-dependency-3" class="anchor"></a>Adding a dependency</h2>
   <p>Changing gears a bit, let's look at how to use published libraries to add extra functionality to our apps.</p>
   <ol>
    <li>Open up <code>build.sbt</code> and add the following line:</li>
@@ -92,8 +92,8 @@
   <p>Here, <code>libraryDependencies</code> is a set of dependencies, and by using <code>+=</code>, we're adding the <a href="https://github.com/scala/scala-parser-combinators">scala-parser-combinators</a> dependency to the set of dependencies that sbt will go and fetch when it starts up. Now, in any Scala file, you can import classes, objects, etc, from scala-parser-combinators with a regular import.</p>
   <p>You can find more published libraries on <a href="https://index.scala-lang.org/">Scaladex</a>, the Scala library index, where you can also copy the above dependency information for pasting into your <code>build.sbt</code> file.</p>
  </section>
- <section id="next-steps-102">
-  <h2 class="h500"><a href="#next-steps-102" class="anchor"></a>Next steps</h2>
+ <section id="next-steps-6">
+  <h2 class="h500"><a href="#next-steps-6" class="anchor"></a>Next steps</h2>
   <p>Continue to the next tutorial in the <em>getting started with IntelliJ</em> series, and learn about <a href="testing-scala-in-intellij-with-scalatest.html">testing Scala code in IntelliJ with ScalaTest</a>.</p>
   <p><strong>or</strong></p>
   <ul>
@@ -121,4 +121,4 @@
    <div id="contributors" class="contributors-container"></div>
   </div>
  </div>
-</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#creating-the-project-50">Creating the project</a></li><li><a href="#understanding-the-directory-structure-25">Understanding the directory structure</a></li><li><a href="#writing-scala-code-25">Writing Scala code</a></li><li><a href="#running-the-project-51">Running the project</a></li><li><a href="#adding-a-dependency-51">Adding a dependency</a></li><li><a href="#next-steps-102">Next steps</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
+</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#creating-the-project-2">Creating the project</a></li><li><a href="#understanding-the-directory-structure-1">Understanding the directory structure</a></li><li><a href="#writing-scala-code-1">Writing Scala code</a></li><li><a href="#running-the-project-3">Running the project</a></li><li><a href="#adding-a-dependency-3">Adding a dependency</a></li><li><a href="#next-steps-6">Next steps</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

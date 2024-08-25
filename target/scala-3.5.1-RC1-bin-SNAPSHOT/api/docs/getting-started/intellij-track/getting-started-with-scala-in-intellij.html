@@ -11,8 +11,8 @@
   <script>var availableLanguages = ['en', 'ja', 'ru', 'uk']; console.log('Available languages: ', availableLanguages);</script>
  </div>
  <p>In this tutorial, we'll see how to build a minimal Scala project using IntelliJ IDE with the Scala plugin. In this guide, IntelliJ will download Scala for you.</p>
- <section id="installation-51">
-  <h2 class="h500"><a href="#installation-51" class="anchor"></a>Installation</h2>
+ <section id="installation-3">
+  <h2 class="h500"><a href="#installation-3" class="anchor"></a>Installation</h2>
   <ol>
    <li>Make sure you have the Java 8 JDK (also known as 1.8) 
     <ul>
@@ -24,8 +24,8 @@
   </ol>
   <p>When we create the project, we'll install the latest version of Scala. Note: If you want to open an existing Scala project, you can click <strong>Open</strong> when you start IntelliJ.</p>
  </section>
- <section id="creating-the-project-51">
-  <h2 class="h500"><a href="#creating-the-project-51" class="anchor"></a>Creating the Project</h2>
+ <section id="creating-the-project-3">
+  <h2 class="h500"><a href="#creating-the-project-3" class="anchor"></a>Creating the Project</h2>
   <ol>
    <li>Open up IntelliJ and click <strong>File</strong> =&gt; <strong>New</strong> =&gt; <strong>Project</strong></li>
    <li>On the left panel, select Scala. On the right panel, select IDEA.</li>
@@ -35,16 +35,16 @@
    <li>Once the SDK is created, and you're back to the "New Project" window, click <strong>Finish</strong>.</li>
   </ol>
  </section>
- <section id="writing-code-25">
-  <h2 class="h500"><a href="#writing-code-25" class="anchor"></a>Writing code</h2>
+ <section id="writing-code-1">
+  <h2 class="h500"><a href="#writing-code-1" class="anchor"></a>Writing code</h2>
   <ol>
    <li>On the <strong>Project</strong> pane on the left, right-click <code>src</code> and select <strong>New</strong> =&gt; <strong>Scala class</strong>. If you don't see <strong>Scala class</strong>, right-click on <strong>HelloWorld</strong> and click on <strong>Add Framework Support...</strong>, select <strong>Scala</strong> and proceed. If you see <strong>Error: library is not specified</strong>, you can either click download button, or select the library path manually. If you only see <strong>Scala Worksheet</strong> try expanding the <code>src</code> folder and its <code>main</code> subfolder, and right-click on the <code>scala</code> folder.</li>
    <li>Name the class <code>Hello</code> and change the <strong>Kind</strong> to <code>object</code>.</li>
    <li>Change the code in the file to the following:</li>
   </ol>
-  <div class="tabs" id="tabs-d905fcb8-70a5-4129-8faf-ef47e3afe1e4">
-   <input type="radio" id="tab-'Scala 2'-d905fcb8-70a5-4129-8faf-ef47e3afe1e4" name="tabs-d905fcb8-70a5-4129-8faf-ef47e3afe1e4" class="tab-radio"> <label for="tab-'Scala 2'-d905fcb8-70a5-4129-8faf-ef47e3afe1e4" class="tab-label">'Scala 2'</label> <input type="radio" id="tab-'Scala 3'-d905fcb8-70a5-4129-8faf-ef47e3afe1e4" name="tabs-d905fcb8-70a5-4129-8faf-ef47e3afe1e4" class="tab-radio"> <label for="tab-'Scala 3'-d905fcb8-70a5-4129-8faf-ef47e3afe1e4" class="tab-label">'Scala 3'</label>
-   <div class="tab-content" id="content-'Scala 2'-d905fcb8-70a5-4129-8faf-ef47e3afe1e4">
+  <div class="tabs" id="tabs-f09b16c6-0b3b-4bf7-9d14-29899aad9443">
+   <input type="radio" id="tab-'Scala 2'-f09b16c6-0b3b-4bf7-9d14-29899aad9443" name="tabs-f09b16c6-0b3b-4bf7-9d14-29899aad9443" class="tab-radio"> <label for="tab-'Scala 2'-f09b16c6-0b3b-4bf7-9d14-29899aad9443" class="tab-label">'Scala 2'</label> <input type="radio" id="tab-'Scala 3'-f09b16c6-0b3b-4bf7-9d14-29899aad9443" name="tabs-f09b16c6-0b3b-4bf7-9d14-29899aad9443" class="tab-radio"> <label for="tab-'Scala 3'-f09b16c6-0b3b-4bf7-9d14-29899aad9443" class="tab-label">'Scala 3'</label>
+   <div class="tab-content" id="content-'Scala 2'-f09b16c6-0b3b-4bf7-9d14-29899aad9443">
     <div class="snippet mono-small-block">
      <pre><code class="language-"><span line-number="1" class=""><span class="tooltip-container"></span>object Hello extends App {
 </span><span line-number="2" class=""><span class="tooltip-container"></span>  println("Hello, World!")
@@ -53,7 +53,7 @@
      <div class="buttons"></div>
     </div>
    </div>
-   <div class="tab-content" id="content-'Scala 3'-d905fcb8-70a5-4129-8faf-ef47e3afe1e4">
+   <div class="tab-content" id="content-'Scala 3'-f09b16c6-0b3b-4bf7-9d14-29899aad9443">
     <div class="snippet mono-small-block">
      <pre><code class="language-"><span line-number="1" class=""><span class="tooltip-container"></span>@main def hello(): Unit =
 </span><span line-number="2" class=""><span class="tooltip-container"></span>  println("Hello, World!")
@@ -64,17 +64,17 @@
    </div>
   </div>
  </section>
- <section id="running-it-25">
-  <h2 class="h500"><a href="#running-it-25" class="anchor"></a>Running it</h2>
-  <div class="tabs" id="tabs-7cf997a2-dbbd-450e-9690-0baf699d35a3">
-   <input type="radio" id="tab-Scala2-7cf997a2-dbbd-450e-9690-0baf699d35a3" name="tabs-7cf997a2-dbbd-450e-9690-0baf699d35a3" class="tab-radio"> <label for="tab-Scala2-7cf997a2-dbbd-450e-9690-0baf699d35a3" class="tab-label">Scala2</label> <input type="radio" id="tab-Scala3-7cf997a2-dbbd-450e-9690-0baf699d35a3" name="tabs-7cf997a2-dbbd-450e-9690-0baf699d35a3" class="tab-radio"> <label for="tab-Scala3-7cf997a2-dbbd-450e-9690-0baf699d35a3" class="tab-label">Scala3</label>
-   <div class="tab-content" id="content-Scala2-7cf997a2-dbbd-450e-9690-0baf699d35a3">
+ <section id="running-it-1">
+  <h2 class="h500"><a href="#running-it-1" class="anchor"></a>Running it</h2>
+  <div class="tabs" id="tabs-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7">
+   <input type="radio" id="tab-Scala2-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7" name="tabs-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7" class="tab-radio"> <label for="tab-Scala2-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7" class="tab-label">Scala2</label> <input type="radio" id="tab-Scala3-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7" name="tabs-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7" class="tab-radio"> <label for="tab-Scala3-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7" class="tab-label">Scala3</label>
+   <div class="tab-content" id="content-Scala2-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7">
     <ul>
      <li>Right click on <code>Hello</code> in your code and select <strong>Run 'Hello'</strong>.</li>
      <li>You're done!</li>
     </ul>
    </div>
-   <div class="tab-content" id="content-Scala3-7cf997a2-dbbd-450e-9690-0baf699d35a3">
+   <div class="tab-content" id="content-Scala3-2a6a58ce-26f2-4cff-a29a-b651b5eec5e7">
     <ul>
      <li>Right click on <code>hello</code> in your code and select <strong>Run 'hello'</strong>.</li>
      <li>You're done!</li>
@@ -82,17 +82,17 @@
    </div>
   </div>
  </section>
- <section id="experimenting-with-scala-25">
-  <h2 class="h500"><a href="#experimenting-with-scala-25" class="anchor"></a>Experimenting with Scala</h2>
+ <section id="experimenting-with-scala-1">
+  <h2 class="h500"><a href="#experimenting-with-scala-1" class="anchor"></a>Experimenting with Scala</h2>
   <p>A good way to try out code samples is with Scala Worksheets</p>
   <ol>
    <li>In the project pane on the left, right click <code>src</code> and select <strong>New</strong> =&gt; <strong>Scala Worksheet</strong>.</li>
    <li>Name your new Scala worksheet "Mathematician".</li>
    <li>Enter the following code into the worksheet:</li>
   </ol>
-  <div class="tabs" id="tabs-4f209ea6-ef41-4320-887d-5536ed45d854">
-   <input type="radio" id="tab-Scala2and3-4f209ea6-ef41-4320-887d-5536ed45d854" name="tabs-4f209ea6-ef41-4320-887d-5536ed45d854" class="tab-radio"> <label for="tab-Scala2and3-4f209ea6-ef41-4320-887d-5536ed45d854" class="tab-label">Scala2and3</label>
-   <div class="tab-content" id="content-Scala2and3-4f209ea6-ef41-4320-887d-5536ed45d854">
+  <div class="tabs" id="tabs-675c357e-d6a1-4380-910e-37ec4a67f965">
+   <input type="radio" id="tab-Scala2and3-675c357e-d6a1-4380-910e-37ec4a67f965" name="tabs-675c357e-d6a1-4380-910e-37ec4a67f965" class="tab-radio"> <label for="tab-Scala2and3-675c357e-d6a1-4380-910e-37ec4a67f965" class="tab-label">Scala2and3</label>
+   <div class="tab-content" id="content-Scala2and3-675c357e-d6a1-4380-910e-37ec4a67f965">
     <div class="snippet mono-small-block">
      <pre><code class="language-"><span line-number="1" class=""><span class="tooltip-container"></span>def square(x: Int): Int = x * x
 </span><span line-number="2" class=""><span class="tooltip-container"></span>
@@ -104,8 +104,8 @@
   </div>
   <p>As you change your code, you'll notice that it gets evaluated in the right pane. If you do not see a right pane, right-click on your Scala worksheet in the Project pane, and click on Evaluate Worksheet.</p>
  </section>
- <section id="next-steps-103">
-  <h2 class="h500"><a href="#next-steps-103" class="anchor"></a>Next Steps</h2>
+ <section id="next-steps-7">
+  <h2 class="h500"><a href="#next-steps-7" class="anchor"></a>Next Steps</h2>
   <p>Now you know how to create a simple Scala project which can be used for starting to learn the language. In the next tutorial, we'll introduce an important build tool called sbt which can be used for simple projects and production apps.</p>
   <p>Up Next: <a href="building-a-scala-project-with-intellij-and-sbt.html">Building a Scala Project with IntelliJ and sbt</a></p>
  </section>
@@ -126,4 +126,4 @@
    <div id="contributors" class="contributors-container"></div>
   </div>
  </div>
-</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#installation-51">Installation</a></li><li><a href="#creating-the-project-51">Creating the Project</a></li><li><a href="#writing-code-25">Writing code</a></li><li><a href="#running-it-25">Running it</a></li><li><a href="#experimenting-with-scala-25">Experimenting with Scala</a></li><li><a href="#next-steps-103">Next Steps</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
+</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#installation-3">Installation</a></li><li><a href="#creating-the-project-3">Creating the Project</a></li><li><a href="#writing-code-1">Writing code</a></li><li><a href="#running-it-1">Running it</a></li><li><a href="#experimenting-with-scala-1">Experimenting with Scala</a></li><li><a href="#next-steps-7">Next Steps</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

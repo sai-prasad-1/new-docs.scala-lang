@@ -180,9 +180,9 @@ You can access the data in this file using the following syntax:
 
 ```html
 <ul>
-  {% for item in site.data.navigation.main_menu %}
-    <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-  {% endfor %}
+  { % for item in site.data.navigation.main_menu % }
+    <li><a href="{ { item.url } }">{ { item.name } }</a></li>
+  { % endfor % }
 </ul>
 ```
 

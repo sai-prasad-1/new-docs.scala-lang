@@ -15,8 +15,8 @@
   <li>Macro definitions (defined values to be substituted in scaladoc).</li>
   <li>Automatic inheritance of comments from a super-class/trait (may be used effectively in combination with macro definitions).</li>
  </ul>
- <section id="where-to-put-scaladoc-21">
-  <h2 class="h500"><a href="#where-to-put-scaladoc-21" class="anchor"></a>Where to put Scaladoc</h2>
+ <section id="where-to-put-scaladoc-1">
+  <h2 class="h500"><a href="#where-to-put-scaladoc-1" class="anchor"></a>Where to put Scaladoc</h2>
   <p>Scaladoc comments go before the items they pertain to in a special comment block that starts with a <code>/**</code> and ends with a <code>*/</code>, like this:</p>
   <pre><code>/** Start the comment here
   * and use the left star followed by a
@@ -43,32 +43,32 @@
   <p>Scaladoc comments can go before fields, methods, classes, traits, objects and even (especially) package objects. Scaladoc comments for package objects make a great place to put an overview of a specific package or API.</p>
   <p>For class <em>primary constructors</em> which in Scala coincide with the definition of the class itself, a <code>@constructor</code> tag is used to target a comment to be put on the primary constructor documentation rather than the class overview.</p>
  </section>
- <section id="tags-21">
-  <h2 class="h500"><a href="#tags-21" class="anchor"></a>Tags</h2>
+ <section id="tags-1">
+  <h2 class="h500"><a href="#tags-1" class="anchor"></a>Tags</h2>
   <p>Scaladoc uses <code>@</code> tags to provide specific detail fields in the comments. These include:</p>
  </section>
- <section id="class-specific-tags-21">
-  <h3 class="h400"><a href="#class-specific-tags-21" class="anchor"></a>Class specific tags</h3>
+ <section id="class-specific-tags-1">
+  <h3 class="h400"><a href="#class-specific-tags-1" class="anchor"></a>Class specific tags</h3>
   <ul>
    <li><code>@constructor</code> placed in the class comment will describe the primary constructor.</li>
   </ul>
  </section>
- <section id="method-specific-tags-21">
-  <h3 class="h400"><a href="#method-specific-tags-21" class="anchor"></a>Method specific tags</h3>
+ <section id="method-specific-tags-1">
+  <h3 class="h400"><a href="#method-specific-tags-1" class="anchor"></a>Method specific tags</h3>
   <ul>
    <li><code>@return</code> detail the return value from a method (one per method).</li>
   </ul>
  </section>
- <section id="method-constructor-andor-class-tags-21">
-  <h3 class="h400"><a href="#method-constructor-andor-class-tags-21" class="anchor"></a>Method, Constructor and/or Class tags</h3>
+ <section id="method-constructor-andor-class-tags-1">
+  <h3 class="h400"><a href="#method-constructor-andor-class-tags-1" class="anchor"></a>Method, Constructor and/or Class tags</h3>
   <ul>
    <li><code>@throws</code> what exceptions (if any) the method or constructor may throw.</li>
    <li><code>@param</code> detail a value parameter for a method or constructor, provide one per parameter to the method/constructor.</li>
    <li><code>@tparam</code> detail a type parameter for a method, constructor or class. Provide one per type parameter.</li>
   </ul>
  </section>
- <section id="usage-tags-21">
-  <h3 class="h400"><a href="#usage-tags-21" class="anchor"></a>Usage tags</h3>
+ <section id="usage-tags-1">
+  <h3 class="h400"><a href="#usage-tags-1" class="anchor"></a>Usage tags</h3>
   <ul>
    <li><code>@see</code> reference other sources of information like external document links or related entities in the documentation.</li>
    <li><code>@note</code> add a note for pre- or post-conditions, or any other notable restrictions or expectations.</li>
@@ -76,8 +76,8 @@
    <li><code>@usecase</code> provide a simplified method definition for when the full method definition is too complex or noisy. An example is (in the collections API), providing documentation for methods that omit the implicit <code>canBuildFrom</code>.</li>
   </ul>
  </section>
- <section id="member-grouping-tags-21">
-  <h3 class="h400"><a href="#member-grouping-tags-21" class="anchor"></a>Member grouping tags</h3>
+ <section id="member-grouping-tags-1">
+  <h3 class="h400"><a href="#member-grouping-tags-1" class="anchor"></a>Member grouping tags</h3>
   <p>These tags are well-suited to larger types or packages, with many members. They allow you to organize the Scaladoc page into distinct sections, with each one shown separately, in the order that you choose.</p>
   <p>These tags are <em>not</em> enabled by default! You must pass the <code>-groups</code> flag to Scaladoc in order to turn them on. Typically, the sbt for this will look something like:</p>
   <div class="snippet mono-small-block">
@@ -97,15 +97,15 @@
    <li><code>@groupprio &lt;group&gt; &lt;priority&gt;</code> - control the order of the group on the page. Defaults to 0. Ungrouped elements have an implicit priority of 1000. Use a value between 0 and 999 to set a relative position to other groups. Low values will appear before high values.</li>
   </ul>
  </section>
- <section id="diagram-tags-21">
-  <h3 class="h400"><a href="#diagram-tags-21" class="anchor"></a>Diagram tags</h3>
+ <section id="diagram-tags-1">
+  <h3 class="h400"><a href="#diagram-tags-1" class="anchor"></a>Diagram tags</h3>
   <ul>
    <li><code>@contentDiagram</code> - use with traits and classes to include a content hierarchy diagram showing included types. The diagram content can be fine-tuned with additional specifiers taken from <code>hideNodes</code>, <code>hideOutgoingImplicits</code>, <code>hideSubclasses</code>, <code>hideEdges</code>, <code>hideIncomingImplicits</code>, <code>hideSuperclasses</code> and <code>hideInheritedNode</code>. <code>hideDiagram</code> can be supplied to prevent a diagram from being created if it would be created by default. Packages and objects have content diagrams by default.</li>
    <li><code>@inheritanceDiagram</code> - TODO</li>
   </ul>
  </section>
- <section id="other-tags-21">
-  <h3 class="h400"><a href="#other-tags-21" class="anchor"></a>Other tags</h3>
+ <section id="other-tags-1">
+  <h3 class="h400"><a href="#other-tags-1" class="anchor"></a>Other tags</h3>
   <ul>
    <li><code>@author</code> provide author information for the following entity</li>
    <li><code>@version</code> the version of the system or API that this entity is a part of.</li>
@@ -116,33 +116,33 @@
    <li><code>@documentable</code> Expand a type alias and abstract type into a full template page. - TODO: Test the "abstract type" claim - no examples of this in the Scala code base</li>
   </ul>
  </section>
- <section id="macros-21">
-  <h3 class="h400"><a href="#macros-21" class="anchor"></a>Macros</h3>
+ <section id="macros-1">
+  <h3 class="h400"><a href="#macros-1" class="anchor"></a>Macros</h3>
   <ul>
    <li><code>@define &lt;name&gt; &lt;definition&gt;</code> allows use of <code>$name</code> in other Scaladoc comments within the same source file which will be expanded to the contents of <code>&lt;definition&gt;</code>.</li>
   </ul>
  </section>
- <section id="212-tags---todo-move-these-into-the-above-groups-with-a-212-note-21">
-  <h3 class="h400"><a href="#212-tags---todo-move-these-into-the-above-groups-with-a-212-note-21" class="anchor"></a>2.12 tags - TODO: Move these into the above groups with a 2.12 note</h3>
+ <section id="212-tags---todo-move-these-into-the-above-groups-with-a-212-note-1">
+  <h3 class="h400"><a href="#212-tags---todo-move-these-into-the-above-groups-with-a-212-note-1" class="anchor"></a>2.12 tags - TODO: Move these into the above groups with a 2.12 note</h3>
   <ul>
    <li><code>@shortDescription</code> ???</li>
    <li><code>@hideImplicitConversion</code> ???</li>
   </ul>
  </section>
- <section id="comment-inheritance-21">
-  <h2 class="h500"><a href="#comment-inheritance-21" class="anchor"></a>Comment Inheritance</h2>
+ <section id="comment-inheritance-1">
+  <h2 class="h500"><a href="#comment-inheritance-1" class="anchor"></a>Comment Inheritance</h2>
  </section>
- <section id="implicit-21">
-  <h3 class="h400"><a href="#implicit-21" class="anchor"></a>Implicit</h3>
+ <section id="implicit-1">
+  <h3 class="h400"><a href="#implicit-1" class="anchor"></a>Implicit</h3>
   <p>If a comment is not provided for an entity at the current inheritance level, but is supplied for the overridden entity at a higher level in the inheritance hierarchy, the comment from the super-class will be used.</p>
   <p>Likewise, if <code>@param</code>, <code>@tparam</code>, <code>@return</code> and other entity tags are omitted but available from a superclass, those comments will be used.</p>
  </section>
- <section id="explicit-21">
-  <h3 class="h400"><a href="#explicit-21" class="anchor"></a>Explicit</h3>
+ <section id="explicit-1">
+  <h3 class="h400"><a href="#explicit-1" class="anchor"></a>Explicit</h3>
   <p>For explicit comment inheritance, use the <code>@inheritdoc</code> tag.</p>
  </section>
- <section id="markup-21">
-  <h2 class="h500"><a href="#markup-21" class="anchor"></a>Markup</h2>
+ <section id="markup-1">
+  <h2 class="h500"><a href="#markup-1" class="anchor"></a>Markup</h2>
   <p>It is still possible to embed HTML tags in Scaladoc (like with Javadoc), but not necessary most of the time as markup may be used instead.</p>
   <p>Some types of markup available:</p>
   <pre><code>`monospace`
@@ -156,8 +156,8 @@ __underline__
   e.g. [[https://scala-lang.org Scala Language Site]]
 </code></pre>
  </section>
- <section id="other-formatting-notes-21">
-  <h3 class="h400"><a href="#other-formatting-notes-21" class="anchor"></a>Other formatting notes</h3>
+ <section id="other-formatting-notes-1">
+  <h3 class="h400"><a href="#other-formatting-notes-1" class="anchor"></a>Other formatting notes</h3>
   <ul>
    <li><strong>Paragraphs</strong> are started with one (or more) blank lines. <code>*</code> in the margin for the comment is valid (and should be included) but the line should be blank otherwise.</li>
    <li><strong>Code blocks</strong> are contained within <code>{{{</code> this <code>}}}</code> and may be multi-line. Indentation is relative to the starting <code>*</code> for the comment.</li>
@@ -184,16 +184,16 @@ __underline__
   */
 </code></pre>
  </section>
- <section id="general-notes-for-writing-scaladoc-comments-21">
-  <h2 class="h500"><a href="#general-notes-for-writing-scaladoc-comments-21" class="anchor"></a>General Notes for Writing Scaladoc Comments</h2>
+ <section id="general-notes-for-writing-scaladoc-comments-1">
+  <h2 class="h500"><a href="#general-notes-for-writing-scaladoc-comments-1" class="anchor"></a>General Notes for Writing Scaladoc Comments</h2>
   <ul>
    <li>Concise is nice! Get to the point quickly, people have limited time to spend on your documentation, use it wisely.</li>
    <li>Omit unnecessary words. Prefer <code>returns X</code> rather than <code>this method returns X</code>, and <code>does X,Y &amp; Z</code> rather than <code>this method does X, Y and Z</code>.</li>
    <li>DRY - don't repeat yourself. Resist duplicating the method description in the <code>@return</code> tag and other forms of repetitive commenting.</li>
   </ul>
  </section>
- <section id="resolving-ambiguous-links-within-scaladoc-comments-21">
-  <h2 class="h500"><a href="#resolving-ambiguous-links-within-scaladoc-comments-21" class="anchor"></a>Resolving Ambiguous Links within Scaladoc Comments</h2>
+ <section id="resolving-ambiguous-links-within-scaladoc-comments-1">
+  <h2 class="h500"><a href="#resolving-ambiguous-links-within-scaladoc-comments-1" class="anchor"></a>Resolving Ambiguous Links within Scaladoc Comments</h2>
   <p>When two methods are indistinguishable from each other lexically, it can cause Scaladoc to report that there are ambiguous methods. As an example:</p>
   <div class="snippet mono-small-block" scala-snippet="">
    <pre><code class="language-scala"><span line-number="1" class=""><span class="tooltip-container"></span>import scala.collection.mutable.ListBuffer
@@ -241,15 +241,15 @@ __underline__
     </ul></li>
   </ul>
  </section>
- <section id="known-limitations-21">
-  <h3 class="h400"><a href="#known-limitations-21" class="anchor"></a>Known Limitations</h3>
+ <section id="known-limitations-1">
+  <h3 class="h400"><a href="#known-limitations-1" class="anchor"></a>Known Limitations</h3>
   <ul>
    <li><code>#</code> syntax does not seem to be supported for parameters and return types.</li>
    <li>Spaces cannot be escaped with <code>\</code>, so <code>implicit</code> parameters seem not to be supported either.</li>
   </ul>
  </section>
- <section id="more-details-on-writing-scaladoc-21">
-  <h2 class="h500"><a href="#more-details-on-writing-scaladoc-21" class="anchor"></a>More details on writing Scaladoc</h2>
+ <section id="more-details-on-writing-scaladoc-1">
+  <h2 class="h500"><a href="#more-details-on-writing-scaladoc-1" class="anchor"></a>More details on writing Scaladoc</h2>
   <p>Further information on the formatting and style recommendations can be found in <a href="/style/scaladoc.html">Scala-lang scaladoc style guide</a>.</p>
  </section>
  <div class="divider"></div>
@@ -269,4 +269,4 @@ __underline__
    <div id="contributors" class="contributors-container"></div>
   </div>
  </div>
-</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#where-to-put-scaladoc-21">Where to put Scaladoc</a></li><li><a href="#tags-21">Tags</a><ul><li><a href="#class-specific-tags-21">Class specific tags</a></li><li><a href="#method-specific-tags-21">Method specific tags</a></li><li><a href="#method-constructor-andor-class-tags-21">Method, Constructor and/or Class tags</a></li><li><a href="#usage-tags-21">Usage tags</a></li><li><a href="#member-grouping-tags-21">Member grouping tags</a></li><li><a href="#diagram-tags-21">Diagram tags</a></li><li><a href="#other-tags-21">Other tags</a></li><li><a href="#macros-21">Macros</a></li><li><a href="#212-tags---todo-move-these-into-the-above-groups-with-a-212-note-21">2.12 tags - TODO: Move these into the above groups with a 2.12 note</a></li></ul></li><li><a href="#comment-inheritance-21">Comment Inheritance</a><ul><li><a href="#implicit-21">Implicit</a></li><li><a href="#explicit-21">Explicit</a></li></ul></li><li><a href="#markup-21">Markup</a><ul><li><a href="#other-formatting-notes-21">Other formatting notes</a></li></ul></li><li><a href="#general-notes-for-writing-scaladoc-comments-21">General Notes for Writing Scaladoc Comments</a></li><li><a href="#resolving-ambiguous-links-within-scaladoc-comments-21">Resolving Ambiguous Links within Scaladoc Comments</a><ul><li><a href="#known-limitations-21">Known Limitations</a></li></ul></li><li><a href="#more-details-on-writing-scaladoc-21">More details on writing Scaladoc</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
+</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#where-to-put-scaladoc-1">Where to put Scaladoc</a></li><li><a href="#tags-1">Tags</a><ul><li><a href="#class-specific-tags-1">Class specific tags</a></li><li><a href="#method-specific-tags-1">Method specific tags</a></li><li><a href="#method-constructor-andor-class-tags-1">Method, Constructor and/or Class tags</a></li><li><a href="#usage-tags-1">Usage tags</a></li><li><a href="#member-grouping-tags-1">Member grouping tags</a></li><li><a href="#diagram-tags-1">Diagram tags</a></li><li><a href="#other-tags-1">Other tags</a></li><li><a href="#macros-1">Macros</a></li><li><a href="#212-tags---todo-move-these-into-the-above-groups-with-a-212-note-1">2.12 tags - TODO: Move these into the above groups with a 2.12 note</a></li></ul></li><li><a href="#comment-inheritance-1">Comment Inheritance</a><ul><li><a href="#implicit-1">Implicit</a></li><li><a href="#explicit-1">Explicit</a></li></ul></li><li><a href="#markup-1">Markup</a><ul><li><a href="#other-formatting-notes-1">Other formatting notes</a></li></ul></li><li><a href="#general-notes-for-writing-scaladoc-comments-1">General Notes for Writing Scaladoc Comments</a></li><li><a href="#resolving-ambiguous-links-within-scaladoc-comments-1">Resolving Ambiguous Links within Scaladoc Comments</a><ul><li><a href="#known-limitations-1">Known Limitations</a></li></ul></li><li><a href="#more-details-on-writing-scaladoc-1">More details on writing Scaladoc</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

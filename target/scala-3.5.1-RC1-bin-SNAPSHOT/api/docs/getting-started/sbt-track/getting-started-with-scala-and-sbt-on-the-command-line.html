@@ -11,8 +11,8 @@
   <script>var availableLanguages = ['en', 'ja', 'ru', 'uk', 'zh-cn']; console.log('Available languages: ', availableLanguages);</script>
  </div>
  <p>In this tutorial, you'll see how to create a Scala project from a template. You can use this as a starting point for your own projects. We'll use <a href="https://www.scala-sbt.org/1.x/docs/index.html">sbt</a>, the de facto build tool for Scala. sbt compiles, runs, and tests your projects among other related tasks. We assume you know how to use a terminal.</p>
- <section id="installation-50">
-  <h2 class="h500"><a href="#installation-50" class="anchor"></a>Installation</h2>
+ <section id="installation-2">
+  <h2 class="h500"><a href="#installation-2" class="anchor"></a>Installation</h2>
   <ol>
    <li>Make sure you have the Java 8 JDK (also known as 1.8) 
     <ul>
@@ -27,11 +27,11 @@
     </ul></li>
   </ol>
  </section>
- <section id="create-the-project-25">
-  <h2 class="h500"><a href="#create-the-project-25" class="anchor"></a>Create the project</h2>
-  <div class="tabs" id="tabs-181eff61-7903-481f-b376-9617916cc7de">
-   <input type="radio" id="tab-'Scala 2'-181eff61-7903-481f-b376-9617916cc7de" name="tabs-181eff61-7903-481f-b376-9617916cc7de" class="tab-radio"> <label for="tab-'Scala 2'-181eff61-7903-481f-b376-9617916cc7de" class="tab-label">'Scala 2'</label> <input type="radio" id="tab-'Scala 3'-181eff61-7903-481f-b376-9617916cc7de" name="tabs-181eff61-7903-481f-b376-9617916cc7de" class="tab-radio"> <label for="tab-'Scala 3'-181eff61-7903-481f-b376-9617916cc7de" class="tab-label">'Scala 3'</label>
-   <div class="tab-content" id="content-'Scala 2'-181eff61-7903-481f-b376-9617916cc7de">
+ <section id="create-the-project-1">
+  <h2 class="h500"><a href="#create-the-project-1" class="anchor"></a>Create the project</h2>
+  <div class="tabs" id="tabs-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6">
+   <input type="radio" id="tab-'Scala 2'-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6" name="tabs-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6" class="tab-radio"> <label for="tab-'Scala 2'-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6" class="tab-label">'Scala 2'</label> <input type="radio" id="tab-'Scala 3'-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6" name="tabs-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6" class="tab-radio"> <label for="tab-'Scala 3'-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6" class="tab-label">'Scala 3'</label>
+   <div class="tab-content" id="content-'Scala 2'-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6">
     <ol>
      <li><code>cd</code> to an empty folder.</li>
      <li>Run the following command <code>sbt new scala/hello-world.g8</code>. This pulls the 'hello-world' template from GitHub. It will also create a <code>target</code> folder, which you can ignore.</li>
@@ -39,7 +39,7 @@
      <li>Let's take a look at what just got generated:</li>
     </ol>
    </div>
-   <div class="tab-content" id="content-'Scala 3'-181eff61-7903-481f-b376-9617916cc7de">
+   <div class="tab-content" id="content-'Scala 3'-2d1df4aa-f6cb-41a9-acfb-e0a5cb3233b6">
     <ol>
      <li><code>cd</code> to an empty folder.</li>
      <li>Run the following command <code>sbt new scala/scala3.g8</code>. This pulls the 'scala3' template from GitHub. It will also create a <code>target</code> folder, which you can ignore.</li>
@@ -62,16 +62,16 @@
   </div>
   <p>After you build your project, sbt will create more <code>target</code> directories for generated files. You can ignore these.</p>
  </section>
- <section id="running-the-project-50">
-  <h2 class="h500"><a href="#running-the-project-50" class="anchor"></a>Running the project</h2>
+ <section id="running-the-project-2">
+  <h2 class="h500"><a href="#running-the-project-2" class="anchor"></a>Running the project</h2>
   <ol>
    <li><code>cd</code> into <code>hello-world</code>.</li>
    <li>Run <code>sbt</code>. This will open up the sbt console.</li>
    <li>Type <code>~run</code>. The <code>~</code> is optional and causes sbt to re-run on every file save, allowing for a fast edit/run/debug cycle. sbt will also generate a <code>target</code> directory which you can ignore.</li>
   </ol>
  </section>
- <section id="modifying-the-code-25">
-  <h2 class="h500"><a href="#modifying-the-code-25" class="anchor"></a>Modifying the code</h2>
+ <section id="modifying-the-code-1">
+  <h2 class="h500"><a href="#modifying-the-code-1" class="anchor"></a>Modifying the code</h2>
   <ol>
    <li>Open the file <code>src/main/scala/Main.scala</code> in your favorite text editor.</li>
    <li>Change "Hello, World!" to "Hello, New York!"</li>
@@ -79,8 +79,8 @@
    <li>You can continue to make changes and see the results in the console.</li>
   </ol>
  </section>
- <section id="adding-a-dependency-50">
-  <h2 class="h500"><a href="#adding-a-dependency-50" class="anchor"></a>Adding a dependency</h2>
+ <section id="adding-a-dependency-2">
+  <h2 class="h500"><a href="#adding-a-dependency-2" class="anchor"></a>Adding a dependency</h2>
   <p>Changing gears a bit, let's look at how to use published libraries to add extra functionality to our apps.</p>
   <ol>
    <li>Open up <code>build.sbt</code> and add the following line:</li>
@@ -96,8 +96,8 @@
    <p><strong>Note for Java Libraries:</strong> For a regular Java library, you should only use one percent (<code>%</code>) between the organization name and artifact name. Double percent (<code>%%</code>) is a specialisation for Scala libraries. You can learn more about the reason for this in the <a href="https://www.scala-sbt.org/1.x/docs/Library-Dependencies.html#Getting+the+right+Scala+version+with">sbt documentation</a>.</p>
   </blockquote>
  </section>
- <section id="next-steps-101">
-  <h2 class="h500"><a href="#next-steps-101" class="anchor"></a>Next steps</h2>
+ <section id="next-steps-5">
+  <h2 class="h500"><a href="#next-steps-5" class="anchor"></a>Next steps</h2>
   <p>Continue to the next tutorial in the <em>getting started with sbt</em> series, and learn about <a href="testing-scala-with-sbt-on-the-command-line.html">testing Scala code with sbt in the command line</a>.</p>
   <p><strong>or</strong></p>
   <ul>
@@ -122,4 +122,4 @@
    <div id="contributors" class="contributors-container"></div>
   </div>
  </div>
-</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#installation-50">Installation</a></li><li><a href="#create-the-project-25">Create the project</a></li><li><a href="#running-the-project-50">Running the project</a></li><li><a href="#modifying-the-code-25">Modifying the code</a></li><li><a href="#adding-a-dependency-50">Adding a dependency</a></li><li><a href="#next-steps-101">Next steps</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
+</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#installation-2">Installation</a></li><li><a href="#create-the-project-1">Create the project</a></li><li><a href="#running-the-project-2">Running the project</a></li><li><a href="#modifying-the-code-1">Modifying the code</a></li><li><a href="#adding-a-dependency-2">Adding a dependency</a></li><li><a href="#next-steps-5">Next steps</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

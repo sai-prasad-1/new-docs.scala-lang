@@ -8,15 +8,15 @@
  </aside>
  <div class="langauge-picker-container">
  </div>
- <section id="custom-template-tags-documentation-21">
-  <h1 class="h500"><a href="#custom-template-tags-documentation-21" class="anchor"></a>Custom Template Tags Documentation</h1>
+ <section id="custom-template-tags-documentation-1">
+  <h1 class="h500"><a href="#custom-template-tags-documentation-1" class="anchor"></a>Custom Template Tags Documentation</h1>
  </section>
- <section id="1-language-picker-tag-19">
-  <h2 class="h500"><a href="#1-language-picker-tag-19" class="anchor"></a>1. Language Picker Tag</h2>
+ <section id="1-language-picker-tag-1">
+  <h2 class="h500"><a href="#1-language-picker-tag-1" class="anchor"></a>1. Language Picker Tag</h2>
   <p>The language_picker tag is a custom tag used to render a language selection dropdown on a page. This tag allows users to switch between different language versions of the content. The available languages are determined based on the configuration and the frontmatter of the page.</p>
  </section>
- <section id="prequisites-19">
-  <h3 class="h400"><a href="#prequisites-19" class="anchor"></a>Prequisites:</h3>
+ <section id="prequisites-1">
+  <h3 class="h400"><a href="#prequisites-1" class="anchor"></a>Prequisites:</h3>
   <ul>
    <li>
     <h4>Configuration in config.yaml:</h4>
@@ -54,8 +54,8 @@
     </div></li>
   </ul>
  </section>
- <section id="usage-21">
-  <h3 class="h400"><a href="#usage-21" class="anchor"></a>Usage:</h3>
+ <section id="usage-1">
+  <h3 class="h400"><a href="#usage-1" class="anchor"></a>Usage:</h3>
   <div class="snippet mono-small-block">
    <pre><code class="language-html"><span line-number="1" class=""><span class="tooltip-container"></span>&lt;div class="language-picker-container"&gt;
 </span><span line-number="2" class=""><span class="tooltip-container"></span>    { % if page.languages % }
@@ -66,54 +66,54 @@
    <div class="buttons"></div>
   </div>
  </section>
- <section id="considerations-19">
-  <h3 class="h400"><a href="#considerations-19" class="anchor"></a>Considerations</h3>
+ <section id="considerations-1">
+  <h3 class="h400"><a href="#considerations-1" class="anchor"></a>Considerations</h3>
   <ul>
    <li>Empty Language List: If the languages list in the frontmatter is empty, the language_picker tag will not render anything.</li>
    <li>Default Language: If the selected language is en, the language code will be removed from the URL, treating it as the default language.</li>
    <li>Folder Structure: Ensure that the corresponding language folders exist in the _docs directory; otherwise, the language switch will lead to broken links.</li>
   </ul>
  </section>
- <section id="1-include-tag-19">
-  <h2 class="h500"><a href="#1-include-tag-19" class="anchor"></a>1. Include Tag</h2>
+ <section id="1-include-tag-1">
+  <h2 class="h500"><a href="#1-include-tag-1" class="anchor"></a>1. Include Tag</h2>
  </section>
- <section id="purpose-21">
-  <h3 class="h400"><a href="#purpose-21" class="anchor"></a>Purpose:</h3>
+ <section id="purpose-1">
+  <h3 class="h400"><a href="#purpose-1" class="anchor"></a>Purpose:</h3>
   <p>The <code>{ % include % }</code> tag is used to include content from other files or templates within your page. This helps in reusing common elements across multiple pages, such as headers, footers, or any other repeated content.</p>
  </section>
- <section id="usage1-21">
-  <h3 class="h400"><a href="#usage1-21" class="anchor"></a>Usage:</h3>
+ <section id="usage1-1">
+  <h3 class="h400"><a href="#usage1-1" class="anchor"></a>Usage:</h3>
   <div class="snippet mono-small-block">
    <pre><code class="language-html"><span line-number="1" class=""><span class="tooltip-container"></span>{ % include 'filename' variable1='value1' variable2='value2' % }
 </span></code></pre>
    <div class="buttons"></div>
   </div>
  </section>
- <section id="example-36">
-  <h3 class="h400"><a href="#example-36" class="anchor"></a>Example:</h3>
+ <section id="example-2">
+  <h3 class="h400"><a href="#example-2" class="anchor"></a>Example:</h3>
   <div class="snippet mono-small-block">
    <pre><code class="language-html"><span line-number="1" class=""><span class="tooltip-container"></span>{ % include 'header.html' title='Welcome to My Website' % }
 </span></code></pre>
    <div class="buttons"></div>
   </div>
  </section>
- <section id="how-it-works-21">
-  <h3 class="h400"><a href="#how-it-works-21" class="anchor"></a>How it Works:</h3>
+ <section id="how-it-works-1">
+  <h3 class="h400"><a href="#how-it-works-1" class="anchor"></a>How it Works:</h3>
   <ul>
    <li>File Inclusion: The tag includes the specified file from a predefined folder.</li>
    <li>Passing Variables: You can pass variables when including a file, which can be accessed within the included file using the syntax .</li>
    <li>Accessing Variables: Inside the included file, the passed variables can be accessed like regular variables, allowing dynamic content based on the context of inclusion.</li>
   </ul>
  </section>
- <section id="2-tabs--block-19">
-  <h2 class="h500"><a href="#2-tabs--block-19" class="anchor"></a>2. Tabs Block</h2>
+ <section id="2-tabs--block-1">
+  <h2 class="h500"><a href="#2-tabs--block-1" class="anchor"></a>2. Tabs Block</h2>
  </section>
- <section id="purpose1-21">
-  <h3 class="h400"><a href="#purpose1-21" class="anchor"></a>Purpose:</h3>
+ <section id="purpose1-1">
+  <h3 class="h400"><a href="#purpose1-1" class="anchor"></a>Purpose:</h3>
   <p>The { % tabs % } block is used to group content into tabs, allowing users to switch between different content sections without reloading the page. This is useful for organizing content that has multiple views, like installation instructions for different platforms.</p>
  </section>
- <section id="usage2-21">
-  <h3 class="h400"><a href="#usage2-21" class="anchor"></a>Usage:</h3>
+ <section id="usage2-1">
+  <h3 class="h400"><a href="#usage2-1" class="anchor"></a>Usage:</h3>
   <div class="snippet mono-small-block">
    <pre><code class="language-html"><span line-number="1" class=""><span class="tooltip-container"></span>{ % tabs unique-tabs-id class='additional-class' % }
 </span><span line-number="2" class=""><span class="tooltip-container"></span>  { % tab 'Tab 1' for='unique-tabs-id' % }
@@ -129,8 +129,8 @@
    <div class="buttons"></div>
   </div>
  </section>
- <section id="example1-36">
-  <h3 class="h400"><a href="#example1-36" class="anchor"></a>Example:</h3>
+ <section id="example1-2">
+  <h3 class="h400"><a href="#example1-2" class="anchor"></a>Example:</h3>
   <div class="snippet mono-small-block">
    <pre><code class="language-html"><span line-number="1" class=""><span class="tooltip-container"></span>{ % tabs install-instructions % }
 </span><span line-number="2" class=""><span class="tooltip-container"></span>  { % tab 'Windows' for='install-instructions' % }
@@ -153,15 +153,15 @@
    <li>Styling: You can apply additional CSS classes to the tabs by specifying the class attribute</li>
   </ul>
  </section>
- <section id="2-altdetails--block-19">
-  <h2 class="h500"><a href="#2-altdetails--block-19" class="anchor"></a>2. AltDetails Block</h2>
+ <section id="2-altdetails--block-1">
+  <h2 class="h500"><a href="#2-altdetails--block-1" class="anchor"></a>2. AltDetails Block</h2>
  </section>
- <section id="purpose2-21">
-  <h3 class="h400"><a href="#purpose2-21" class="anchor"></a>Purpose:</h3>
+ <section id="purpose2-1">
+  <h3 class="h400"><a href="#purpose2-1" class="anchor"></a>Purpose:</h3>
   <p>The { % altDetails % } tag is used to create switchable sections, often referred to as tabs. This is useful for including optional or advanced information that doesn’t need to be visible by default.</p>
  </section>
- <section id="usage3-19">
-  <h3 class="h400"><a href="#usage3-19" class="anchor"></a>Usage:</h3>
+ <section id="usage3-1">
+  <h3 class="h400"><a href="#usage3-1" class="anchor"></a>Usage:</h3>
   <div class="snippet mono-small-block">
    <pre><code class="language-html"><span line-number="1" class=""><span class="tooltip-container"></span>{ % altDetails 'unique-id' 'Title of the Section' % }
 </span><span line-number="2" class=""><span class="tooltip-container"></span>  &lt;!-- Content inside the dropdown --&gt;
@@ -170,20 +170,20 @@
    <div class="buttons"></div>
   </div>
  </section>
- <section id="how-it-works1-21">
-  <h3 class="h400"><a href="#how-it-works1-21" class="anchor"></a>How it Works:</h3>
+ <section id="how-it-works1-1">
+  <h3 class="h400"><a href="#how-it-works1-1" class="anchor"></a>How it Works:</h3>
   <ul>
    <li>Collapsible Section: The { % altDetails % } tag creates a section that can be expanded or collapsed by the user.</li>
    <li>Title and ID: The first argument is a unique identifier for the section, and the second argument is the title displayed when the section is collapsed.</li>
    <li>Content: Any content placed within the { % altDetails % } and { % endaltDetails % } tags is hidden by default and can be revealed by clicking on the title.</li>
   </ul>
  </section>
- <section id="-data-folder-15">
-  <h1 class="h500"><a href="#-data-folder-15" class="anchor"></a><code>_data</code> Folder</h1>
+ <section id="-data-folder-1">
+  <h1 class="h500"><a href="#-data-folder-1" class="anchor"></a><code>_data</code> Folder</h1>
   <p>The _data folder in your project is used to store YAML, JSON, or CSV files that contain structured data. These files can then be accessed throughout your site using the site.data variable. This is particularly useful for storing site-wide information, such as navigation menus, reusable content blocks, or any other structured data that needs to be referenced across multiple pages.</p>
  </section>
- <section id="structure-and-access-15">
-  <h3 class="h400"><a href="#structure-and-access-15" class="anchor"></a>Structure and Access</h3>
+ <section id="structure-and-access-1">
+  <h3 class="h400"><a href="#structure-and-access-1" class="anchor"></a>Structure and Access</h3>
   <ul>
    <li>
     <p>Folder Location: The _data folder should be located in the root directory of your project.</p></li>
@@ -197,8 +197,8 @@
     </ul></li>
   </ul>
  </section>
- <section id="example-37">
-  <h3 class="h400"><a href="#example-37" class="anchor"></a>Example</h3>
+ <section id="example-3">
+  <h3 class="h400"><a href="#example-3" class="anchor"></a>Example</h3>
   <p>Suppose you have a YAML file <code>_data/navigation.yml</code> with the following content:</p>
   <div class="snippet mono-small-block">
    <pre><code class="language-yaml"><span line-number="1" class=""><span class="tooltip-container"></span>main_menu:
@@ -214,19 +214,21 @@
   <p>You can access the data in this file using the following syntax:</p>
   <div class="snippet mono-small-block">
    <pre><code class="language-html"><span line-number="1" class=""><span class="tooltip-container"></span>&lt;ul&gt;
-</span><span line-number="2" class=""><span class="tooltip-container"></span>  
-</span><span line-number="3" class=""><span class="tooltip-container"></span>&lt;/ul&gt;
+</span><span line-number="2" class=""><span class="tooltip-container"></span>  { % for item in site.data.navigation.main_menu % }
+</span><span line-number="3" class=""><span class="tooltip-container"></span>    &lt;li&gt;&lt;a href="{ { item.url } }"&gt;{ { item.name } }&lt;/a&gt;&lt;/li&gt;
+</span><span line-number="4" class=""><span class="tooltip-container"></span>  { % endfor % }
+</span><span line-number="5" class=""><span class="tooltip-container"></span>&lt;/ul&gt;
 </span></code></pre>
    <div class="buttons"></div>
   </div>
  </section>
- <section id="considerations1-15">
-  <h3 class="h400"><a href="#considerations1-15" class="anchor"></a>Considerations</h3>
+ <section id="considerations1-1">
+  <h3 class="h400"><a href="#considerations1-1" class="anchor"></a>Considerations</h3>
   <ul>
    <li>File Naming: Make sure the file names are unique to avoid conflicts when accessing data.</li>
    <li>Data Structure: Keep the data structure consistent across different files to avoid confusion when accessing data in your templates.</li>
   </ul>
-  <aside class="warning">
+  <aside class="info">
    <div class="icon"></div>
    <div class="content">
     It is preferred to avoid using hyphens in naming conventions. When using LIQP tags, hyphens can be misinterpreted as minus signs, leading to unexpected errors. 
@@ -235,12 +237,12 @@
    </div>
   </aside>
  </section>
- <section id="configuration-file-15">
-  <h1 class="h500"><a href="#configuration-file-15" class="anchor"></a>Configuration File</h1>
+ <section id="configuration-file-1">
+  <h1 class="h500"><a href="#configuration-file-1" class="anchor"></a>Configuration File</h1>
   <p>The <code>_config.yaml</code> file is a central configuration file located in the root directory of your project. It is used to define site-wide settings and variables that can be accessed throughout your site using the <code>site</code> variable.</p>
  </section>
- <section id="structure-and-access1-15">
-  <h3 class="h400"><a href="#structure-and-access1-15" class="anchor"></a>Structure and Access</h3>
+ <section id="structure-and-access1-1">
+  <h3 class="h400"><a href="#structure-and-access1-1" class="anchor"></a>Structure and Access</h3>
   <ul>
    <li>
     <p>File Location: The _config.yaml file should be placed in the root directory of your project.</p></li>
@@ -254,8 +256,8 @@
     </ul></li>
   </ul>
  </section>
- <section id="example1-37">
-  <h3 class="h400"><a href="#example1-37" class="anchor"></a>Example</h3>
+ <section id="example1-3">
+  <h3 class="h400"><a href="#example1-3" class="anchor"></a>Example</h3>
   <p>If your _config.yaml includes:</p>
   <div class="snippet mono-small-block">
    <pre><code class="language-yaml"><span line-number="1" class=""><span class="tooltip-container"></span>site_name: My Awesome Site
@@ -295,4 +297,4 @@
    <div id="contributors" class="contributors-container"></div>
   </div>
  </div>
-</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#custom-template-tags-documentation-21">Custom Template Tags Documentation</a><ul><li><a href="#1-language-picker-tag-19">1. Language Picker Tag</a><ul><li><a href="#prequisites-19">Prequisites:</a></li><li><a href="#usage-21">Usage:</a></li><li><a href="#considerations-19">Considerations</a></li></ul></li><li><a href="#1-include-tag-19">1. Include Tag</a><ul><li><a href="#purpose-21">Purpose:</a></li><li><a href="#usage1-21">Usage:</a></li><li><a href="#example-36">Example:</a></li><li><a href="#how-it-works-21">How it Works:</a></li></ul></li><li><a href="#2-tabs--block-19">2. Tabs Block</a><ul><li><a href="#purpose1-21">Purpose:</a></li><li><a href="#usage2-21">Usage:</a></li><li><a href="#example1-36">Example:</a></li></ul></li><li><a href="#2-altdetails--block-19">2. AltDetails Block</a><ul><li><a href="#purpose2-21">Purpose:</a></li><li><a href="#usage3-19">Usage:</a></li><li><a href="#how-it-works1-21">How it Works:</a></li></ul></li></ul></li><li><a href="#-data-folder-15">_data Folder</a><ul><li><ul><li><a href="#structure-and-access-15">Structure and Access</a></li><li><a href="#example-37">Example</a></li><li><a href="#considerations1-15">Considerations</a></li></ul></li></ul></li><li><a href="#configuration-file-15">Configuration File</a><ul><li><ul><li><a href="#structure-and-access1-15">Structure and Access</a></li><li><a href="#example1-37">Example</a></li></ul></li></ul></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
+</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#custom-template-tags-documentation-1">Custom Template Tags Documentation</a><ul><li><a href="#1-language-picker-tag-1">1. Language Picker Tag</a><ul><li><a href="#prequisites-1">Prequisites:</a></li><li><a href="#usage-1">Usage:</a></li><li><a href="#considerations-1">Considerations</a></li></ul></li><li><a href="#1-include-tag-1">1. Include Tag</a><ul><li><a href="#purpose-1">Purpose:</a></li><li><a href="#usage1-1">Usage:</a></li><li><a href="#example-2">Example:</a></li><li><a href="#how-it-works-1">How it Works:</a></li></ul></li><li><a href="#2-tabs--block-1">2. Tabs Block</a><ul><li><a href="#purpose1-1">Purpose:</a></li><li><a href="#usage2-1">Usage:</a></li><li><a href="#example1-2">Example:</a></li></ul></li><li><a href="#2-altdetails--block-1">2. AltDetails Block</a><ul><li><a href="#purpose2-1">Purpose:</a></li><li><a href="#usage3-1">Usage:</a></li><li><a href="#how-it-works1-1">How it Works:</a></li></ul></li></ul></li><li><a href="#-data-folder-1">_data Folder</a><ul><li><ul><li><a href="#structure-and-access-1">Structure and Access</a></li><li><a href="#example-3">Example</a></li><li><a href="#considerations1-1">Considerations</a></li></ul></li></ul></li><li><a href="#configuration-file-1">Configuration File</a><ul><li><ul><li><a href="#structure-and-access1-1">Structure and Access</a></li><li><a href="#example1-3">Example</a></li></ul></li></ul></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

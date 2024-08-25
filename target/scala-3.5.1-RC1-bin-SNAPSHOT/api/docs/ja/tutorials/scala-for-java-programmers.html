@@ -10,12 +10,12 @@
  </div>
  <p>原文 Michel Schinz and Philipp Haller<br>
    翻訳 TATSUNO Yasuhiro</p>
- <section id="はじめに-21">
-  <h2 class="h500"><a href="#はじめに-21" class="anchor"></a>はじめに</h2>
+ <section id="はじめに-1">
+  <h2 class="h500"><a href="#はじめに-1" class="anchor"></a>はじめに</h2>
   <p>この文書は、Scala 言語とコンパイラを手短に紹介します。 ある程度プログラミング経験を持ち、Scala で何ができるかについて概要を知りたい方向けです。 オブジェクト指向プログラミング、とりわけ Java についての基本的な知識を前提とします。</p>
  </section>
- <section id="最初の例-21">
-  <h2 class="h500"><a href="#最初の例-21" class="anchor"></a>最初の例</h2>
+ <section id="最初の例-1">
+  <h2 class="h500"><a href="#最初の例-1" class="anchor"></a>最初の例</h2>
   <p>最初の例として、基本的な <strong>Hello World</strong> プログラムを用います。 興味をそそられるものではありませんが、言語についてほとんど知らなくてもScala ツールの使い方を実演しやすいです。 こんな感じです:</p>
   <pre><code>object HelloWorld {
   def main(args: Array[String]): Unit = {
@@ -27,24 +27,24 @@
   <p>Java プログラマにあまりなじみがないのは、<code>main</code> メソッドを含む <code>object</code> という宣言です。 Scala はそのような宣言によって、一般に<strong>シングルトンオブジェクト</strong>として知られる、インスタンスを１つだけ有するクラスを取り入れています。 そのため先の宣言は、<code>HelloWorld</code> という名前のクラスと、そのクラスのただ1つのインスタンス（これまた <code>HelloWorld</code> という名前）両方を宣言しています。 このインスタンスは必要に応じ、初めて使われるときに生成されます。</p>
   <p>鋭い読者なら <code>main</code> メソッドが <code>static</code> として宣言されていないことに気づいたかもしれません。 これは Scala には static メンバー（メソッドまたはフィールド）が存在しないからです。 static メンバーを定義するよりも、Scala プログラマーはシングルトンオブジェクトにそれらメンバーを宣言します。</p>
  </section>
- <section id="例をコンパイルする-21">
-  <h3 class="h400"><a href="#例をコンパイルする-21" class="anchor"></a>例をコンパイルする</h3>
+ <section id="例をコンパイルする-1">
+  <h3 class="h400"><a href="#例をコンパイルする-1" class="anchor"></a>例をコンパイルする</h3>
   <p>先の例をコンパイルするために、Scala コンパイラー <code>scalac</code> を使います。 <code>scalac</code> はほとんどのコンパイラーと同様に動きます。 ソースファイルといくつかのオプションを引数として受け取り、１つか複数のオブジェクトファイルを作ります。 作られるオブジェクトファイルは、標準的な Java クラスファイルです。</p>
   <p>上記のプログラムを <code>HelloWorld.scala</code> というファイルに保存したら、次のコマンドを発行することでコンパイルできます （大なり記号 <code>&gt;</code> はシェルプロンプトを表しており、入力しないでください）。</p>
   <pre><code>&gt; scalac HelloWorld.scala
 </code></pre>
   <p>これにより、カレントディレクトリに数個のクラスファイルが生成されます。 そのひとつは <code>HelloWorld.class</code> というもので、<code>scala</code> コマンドを使って直接実行可能（次の章で説明）なクラスを含んでいます。</p>
  </section>
- <section id="例を実行する-21">
-  <h3 class="h400"><a href="#例を実行する-21" class="anchor"></a>例を実行する</h3>
+ <section id="例を実行する-1">
+  <h3 class="h400"><a href="#例を実行する-1" class="anchor"></a>例を実行する</h3>
   <p>一度コンパイルされると、Scala プログラムは <code>scala</code> コマンドを使って実行できます。 その使い方は、Java プログラムの実行に使われる <code>java</code> コマンドとよく似ており、同じオプションを受け入れます。 上の例は以下のコマンドを使って実行でき、期待される結果を生成します。</p>
   <pre><code>&gt; scala -classpath . HelloWorld
 
 Hello, world!
 </code></pre>
  </section>
- <section id="java-とのインタラクション-21">
-  <h2 class="h500"><a href="#java-とのインタラクション-21" class="anchor"></a>Java とのインタラクション</h2>
+ <section id="java-とのインタラクション-1">
+  <h2 class="h500"><a href="#java-とのインタラクション-1" class="anchor"></a>Java とのインタラクション</h2>
   <p>Scala の強みの１つは、Java コードと相互作用するのがとても簡単なことです。 <code>java.lang</code> パッケージのすべてのクラスは初期設定でインポートされています。 他のクラスは明示的にインポートされる必要があります。</p>
   <p>これを実演する例を見てみましょう。 現在の日付を取得し、特定の国たとえばフランスの慣例に従って書式設定したいとします （他の地域、例えばスイスのフランス語を話す範囲も同じ慣例を使います）。</p>
   <p>Java のクラスライブラリは、強力なユーティリティクラス、例えば <code>Date</code> や <code>DateFormat</code> を定義しています. Scala は Java とシームレスに相互運用できるので、Scala クラスライブラリに同等のクラスを実装する必要はありません。 対応する Java パッケージのクラスをただインポートするだけです。</p>
@@ -71,12 +71,12 @@ object FrenchDate {
   <p>これは大したことのない構文上の詳細に思えるかもしれませんが、重要な影響をもたらします。 その１つについては次の節で詳しく取り上げます。</p>
   <p>Java との相互作用についての本節を終える前に、Scala では Java クラスを継承したり、Java インターフェースを実装できることも記しておきます。</p>
  </section>
- <section id="すべてがオブジェクト-21">
-  <h2 class="h500"><a href="#すべてがオブジェクト-21" class="anchor"></a>すべてがオブジェクト</h2>
+ <section id="すべてがオブジェクト-1">
+  <h2 class="h500"><a href="#すべてがオブジェクト-1" class="anchor"></a>すべてがオブジェクト</h2>
   <p>Scala は、数値や関数を含む<strong>あらゆるもの</strong>がオブジェクトであるという意味で、純粋なオブジェクト指向言語です。 この点において、プリミティブ型（例えば <code>boolean</code> や <code>int</code>）を参照型と区別する Java とは異なります。</p>
  </section>
- <section id="数値はオブジェクト-21">
-  <h3 class="h400"><a href="#数値はオブジェクト-21" class="anchor"></a>数値はオブジェクト</h3>
+ <section id="数値はオブジェクト-1">
+  <h3 class="h400"><a href="#数値はオブジェクト-1" class="anchor"></a>数値はオブジェクト</h3>
   <p>数値もまたオブジェクトなのでメソッドを持っています。 実のところ、以下のような数値計算</p>
   <pre><code>1 + 2 * 3 / x
 </code></pre>
@@ -85,8 +85,8 @@ object FrenchDate {
 </code></pre>
   <p>これは <code>+</code> や <code>*</code> などが Scala では識別子として有効であることを意味します。</p>
  </section>
- <section id="関数はオブジェクト-21">
-  <h3 class="h400"><a href="#関数はオブジェクト-21" class="anchor"></a>関数はオブジェクト</h3>
+ <section id="関数はオブジェクト-1">
+  <h3 class="h400"><a href="#関数はオブジェクト-1" class="anchor"></a>関数はオブジェクト</h3>
   <p>Scala では関数もオブジェクトです。 それゆえ関数を引数として渡すこと、関数を変数に格納すること、他の関数から関数を返すことができます。 関数を値として操作できるこの能力は、<strong>関数プログラミング</strong>と呼ばれるとても興味深いプログラミングパラダイムにとって不可欠なものの1つです。</p>
   <p>関数を値として使えることが便利であるとてもシンプルな例として、タイマー関数を考えてみましょう。 それは毎秒何らかの動作を実行するためのものです。 実行したい動作をどうやって渡せるでしょうか？ 当然、関数としてです。 関数渡しのとてもシンプルな例は、多くのプログラマーになじみ深いはずです。 ユーザーインターフェースのコードで、何かイベントが起きたら呼ばれるコールバック関数を登録するのに、よく用いられています。</p>
   <p>次のプログラムでは、<code>oncePerSecond</code> というタイマー関数がコールバック関数を引数として受取ります。 この関数の型は <code>() =&gt; Unit</code> 、つまり、引数を受け取らず何も返さない（<code>Unit</code> 型は C/C++/Java の <code>void</code> と同様）すべての関数を表す型です。 このプログラムの <code>main</code> 関数は、ターミナルに文を印字するコールバックを与えてタイマー関数を呼ぶだけのものです。 つまりこのプログラムは延々と <code>"time flies like an array"</code> という文を毎秒印字します。</p>
@@ -104,8 +104,8 @@ object FrenchDate {
 </code></pre>
   <p>文字列を印字するために使われているのが事前定義された <code>println</code> メソッドで、<code>System.out</code> の <code>println</code> ではないことに注意してください。</p>
  </section>
- <section id="匿名関数-21">
-  <h4 class="h300"><a href="#匿名関数-21" class="anchor"></a>匿名関数</h4>
+ <section id="匿名関数-1">
+  <h4 class="h300"><a href="#匿名関数-1" class="anchor"></a>匿名関数</h4>
   <p>このプログラムは理解しやすいですが、もう少し洗練できます。 まず第一に、関数 <code>timeFlies</code> はあとで <code>oncePerSecond</code> 関数に渡すためだけに定義されていることに気づきます。 たった一度しか使われない関数に名前をつけるのは不必要に思えるので、要は <code>oncePerSecoond</code> に渡す関数を作れさえすればよいでしょう。 Scala では、まさにそんな名前を持たない関数、<strong>匿名関数</strong>を使えます。 <code>timeFlies</code> の代わりに匿名関数を使って改正したタイマープログラムはこんな風になります。</p>
   <pre><code>object TimerAnonymous {
   def oncePerSecond(callback: () =&gt; Unit): Unit = {
@@ -119,8 +119,8 @@ object FrenchDate {
 </code></pre>
   <p>この例で匿名関数が登場することは、関数の引数リストと本体を分ける右矢印 <code>=&gt;</code> から分かります。 この例では、引数リストは空で、矢印の左にある中身のない括弧によって表されています。 関数の本体は上記の <code>timeFlies</code> のものと同じです。</p>
  </section>
- <section id="クラス-21">
-  <h2 class="h500"><a href="#クラス-21" class="anchor"></a>クラス</h2>
+ <section id="クラス-1">
+  <h2 class="h500"><a href="#クラス-1" class="anchor"></a>クラス</h2>
   <p>上で見てきたように、Scala はクラスという概念を持っているように、オブジェクト指向言語です （正確には、クラスという概念のないオブジェクト指向言語もありますが、Scala はそうではありません）。 Scala におけるクラスは Java の構文に近い構文を使って宣言されます。 1つ重要な違いは、Scala におけるクラスはパラメータを持つことができることです。 これは以下の素数の定義に示されています。</p>
   <pre><code>class Complex(real: Double, imaginary: Double) {
   def re() = real
@@ -131,8 +131,8 @@ object FrenchDate {
   <p>これら2つのメソッドの戻り値の型が明示されていないことに注意してください。 コンパイラによって自動で推論されます。 コンパイラはこれらメソッドの右側を調べ、どちらも <code>Double</code> 型の値を返すと推論します。</p>
   <p>コンパイラはここでのように型をいつでも推論できるわけではありません。 残念ながらいつできて、いつできないかを正確に分かる簡単な規則はありません。 実際には、コンパイラは明示的に与えられていない型を推論できないときに訴えてくるので、あまり問題になりません。 簡単な規則として、初心者 Scala プログラマーは、文脈から推定しやすそうな型宣言を省略してみてコンパイラーが認めてくれるか試してみてください。 しばらくすれば、いつ型を省略するか、いつ明示的に指定するか、良い感触をつかむはずです。</p>
  </section>
- <section id="引数なしのメソッド-21">
-  <h3 class="h400"><a href="#引数なしのメソッド-21" class="anchor"></a>引数なしのメソッド</h3>
+ <section id="引数なしのメソッド-1">
+  <h3 class="h400"><a href="#引数なしのメソッド-1" class="anchor"></a>引数なしのメソッド</h3>
   <p><code>re</code> と <code>im</code> メソッドにはちょっとした問題があります。 次の例が示すように、それらを呼ぶには名前のあとに中身のない括弧を置かねばなりません。</p>
   <pre><code>object ComplexNumbers {
   def main(args: Array[String]): Unit = {
@@ -148,8 +148,8 @@ object FrenchDate {
 }
 </code></pre>
  </section>
- <section id="継承とオーバーライド-21">
-  <h3 class="h400"><a href="#継承とオーバーライド-21" class="anchor"></a>継承とオーバーライド</h3>
+ <section id="継承とオーバーライド-1">
+  <h3 class="h400"><a href="#継承とオーバーライド-1" class="anchor"></a>継承とオーバーライド</h3>
   <p>Scala におけるすべてのクラスはスーパークラスを継承します。 前節の <code>Complex</code> の例のように、スーパークラスが指定されていないときは、暗黙的に <code>scala.AnyRef</code> が使われます。</p>
   <p>Scalaでは、スーパークラスから継承されたメソッドをオーバーライドできます。 予想外のオーバーライドを防ぐため、メソッドがオーバーライドしていることを<code>override</code> 修飾子を使って明に指定することが必須です。 その例として、<code>Object</code> から継承した <code>toString</code> メソッドの再定義を <code>Complex</code> クラスに追加してみます。</p>
   <pre><code>class Complex(real: Double, imaginary: Double) {
@@ -168,8 +168,8 @@ object FrenchDate {
 }
 </code></pre>
  </section>
- <section id="ケースクラスとパターンマッチ-21">
-  <h2 class="h500"><a href="#ケースクラスとパターンマッチ-21" class="anchor"></a>ケースクラスとパターンマッチ</h2>
+ <section id="ケースクラスとパターンマッチ-1">
+  <h2 class="h500"><a href="#ケースクラスとパターンマッチ-1" class="anchor"></a>ケースクラスとパターンマッチ</h2>
   <p>プログラムによく現れる一種のデータ構造は、木（訳注：ツリー）です。 例えば、インタープリターやコンパイラーは通例、プログラムを木として内部的に表現します。 XMLドキュメントもツリーです。 何種類ものコンテナーが木、例えば赤黒木をベースとしています。</p>
   <p>そのような木が Scala ではどのように表現され、操作されるかを、小さい計算機プログラムを通じて見ていきます。 このプログラムの目的は、足し算と整数の定数と変数からなる、とても単純な演算式の操作です。 <code>1+2</code> や <code>(x+x)+(7+y)</code> は、そのような式の2つの例です。</p>
   <p>はじめにそのような式の表現を決めなければいけません。 もっとも自然なのは木構造で、ノードは操作（ここでは加算）、葉は値（ここでは定数か変数）です。</p>
@@ -250,8 +250,8 @@ Derivative relative to y:
 </code></pre>
   <p>出力を観察することで、微分係数の結果はユーザーに示されるより前にシンプルにすべきことに気づきます。 パターンマッチを使った基本的なシンプル化の定義は興味深い（ですが驚くほど一筋縄ではいかない）問題なので、読者への練習問題として残しておきます。</p>
  </section>
- <section id="トレイト-21">
-  <h2 class="h500"><a href="#トレイト-21" class="anchor"></a>トレイト</h2>
+ <section id="トレイト-1">
+  <h2 class="h500"><a href="#トレイト-1" class="anchor"></a>トレイト</h2>
   <p>スーパークラスからコードを継承するのとは別に、Scala クラスは1つ以上の<strong>トレイト</strong>からコードを取り込めます。</p>
   <p>おそらく Java プログラマーにとってトレイトを理解するもっとも簡単な方法は、コードを含むことができるインターフェースとしてとらえることでしょう Scala では、クラスがトレイトから継承するとき、トレイトのインターフェースを実装し、トレイトに含まれるコードをすべて継承します。</p>
   <p>（注：Java 8 からは、Java インターフェースも同様にコードを含めるようになった。<code>default</code> キーワードをつけるか、または static メソッドとして)</p>
@@ -296,8 +296,8 @@ Derivative relative to y:
   <p>これで <code>Date</code> クラスの定義は完成です。 このクラスのインスタンスは、日付としても比較可能なオブジェクトとしても見ることができます。 さらに、それらはすべて上で述べた6つの比較述語を定義しています。 <code>equals</code> と <code>&lt;</code> は <code>Date</code> クラスの定義に直接現れているから、他はそれらが <code>Ord</code> トレイトから継承されているからです。</p>
   <p>ここで示した以外の状況でもトレイトはもちろん便利ですが、その応用を長々と説明するのはこの文章の範囲外です。</p>
  </section>
- <section id="ジェネリクス-21">
-  <h2 class="h500"><a href="#ジェネリクス-21" class="anchor"></a>ジェネリクス</h2>
+ <section id="ジェネリクス-1">
+  <h2 class="h500"><a href="#ジェネリクス-1" class="anchor"></a>ジェネリクス</h2>
   <p>（訳注：原文では genericity が使われていますが、日本語ではジェネリクスという用語が広く使われているので、ジェネリクスとします）</p>
   <p>このチュートリアルで探る Scala の最後の特徴はジェネリクスです。 Java プログラマーであれば、Java 言語におけるジェネリクスの欠如がもたらした問題、Java 5 で対応された欠点について、承知しているはずでしょう。</p>
   <p>ジェネリクスとは、型によってパラメータ化されたコードを書ける能力です。 例えば、連結リストのライブラリを書くプログラマーは、リストの要素にどのような型を与えるべきかという問題に直面します。 このリストは多くの様々な文脈で使われはずなので、要素の型が例えば <code>Int</code> であると決めつけることはできません。 これは完全に恣意的で、あまりにも抑圧的です。</p>
@@ -322,8 +322,8 @@ Derivative relative to y:
 </code></pre>
   <p>この例から分かるように、<code>get</code> メソッドから返って来た値を整数として使う前に、キャストする必要はありません。 この特定のセルは整数を保持すると宣言されているので、整数以外を格納できません。</p>
  </section>
- <section id="結び-63">
-  <h2 class="h500"><a href="#結び-63" class="anchor"></a>結び</h2>
+ <section id="結び-3">
+  <h2 class="h500"><a href="#結び-3" class="anchor"></a>結び</h2>
   <p>この文書は Scala 言語の短い概要を説明し、基本的なコード例を示しました。 興味のある読者は、例えば、さらなる説明やコード例がある <strong><a href="https://docs.scala-lang.org/ja/tour/tour-of-scala.html">Scala ツアー</a></strong> に進んでみたり、必要なら <strong><a href="https://www.scala-lang.org/files/archive/spec/2.13/">Scala 言語仕様</a></strong> を調べられます。</p>
  </section>
  <div class="divider"></div>
@@ -343,4 +343,4 @@ Derivative relative to y:
    <div id="contributors" class="contributors-container"></div>
   </div>
  </div>
-</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#はじめに-21">はじめに</a></li><li><a href="#最初の例-21">最初の例</a><ul><li><a href="#例をコンパイルする-21">例をコンパイルする</a></li><li><a href="#例を実行する-21">例を実行する</a></li></ul></li><li><a href="#java-とのインタラクション-21">Java とのインタラクション</a></li><li><a href="#すべてがオブジェクト-21">すべてがオブジェクト</a><ul><li><a href="#数値はオブジェクト-21">数値はオブジェクト</a></li><li><a href="#関数はオブジェクト-21">関数はオブジェクト</a><ul><li><a href="#匿名関数-21">匿名関数</a></li></ul></li></ul></li><li><a href="#クラス-21">クラス</a><ul><li><a href="#引数なしのメソッド-21">引数なしのメソッド</a></li><li><a href="#継承とオーバーライド-21">継承とオーバーライド</a></li></ul></li><li><a href="#ケースクラスとパターンマッチ-21">ケースクラスとパターンマッチ</a></li><li><a href="#トレイト-21">トレイト</a></li><li><a href="#ジェネリクス-21">ジェネリクス</a></li><li><a href="#結び-63">結び</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
+</div></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#はじめに-1">はじめに</a></li><li><a href="#最初の例-1">最初の例</a><ul><li><a href="#例をコンパイルする-1">例をコンパイルする</a></li><li><a href="#例を実行する-1">例を実行する</a></li></ul></li><li><a href="#java-とのインタラクション-1">Java とのインタラクション</a></li><li><a href="#すべてがオブジェクト-1">すべてがオブジェクト</a><ul><li><a href="#数値はオブジェクト-1">数値はオブジェクト</a></li><li><a href="#関数はオブジェクト-1">関数はオブジェクト</a><ul><li><a href="#匿名関数-1">匿名関数</a></li></ul></li></ul></li><li><a href="#クラス-1">クラス</a><ul><li><a href="#引数なしのメソッド-1">引数なしのメソッド</a></li><li><a href="#継承とオーバーライド-1">継承とオーバーライド</a></li></ul></li><li><a href="#ケースクラスとパターンマッチ-1">ケースクラスとパターンマッチ</a></li><li><a href="#トレイト-1">トレイト</a></li><li><a href="#ジェネリクス-1">ジェネリクス</a></li><li><a href="#結び-3">結び</a></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

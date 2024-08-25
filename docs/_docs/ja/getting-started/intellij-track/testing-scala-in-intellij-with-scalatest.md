@@ -3,6 +3,7 @@ title: Intelij で ScalaTest を使って Scala をテストする
 layout: singlepage-overview
 partof: testing-scala-in-intellij-with-scalatest
 language: ja
+languages: [ja, ru, uk]
 disqus: true
 previous-page: /ja/building-a-scala-project-with-intellij-and-sbt
 ---

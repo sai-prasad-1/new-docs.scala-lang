@@ -37,8 +37,6 @@ We recommend using the Scala installer tool "Coursier" that automatically instal
 
 
 ### Using the Scala Installer (recommended way)
-{{ page.languages }}
-
 
 The Scala installer is a tool named [Coursier](https://get-coursier.io/docs/cli-overview), whose main command is named `cs`.
 It ensures that a JVM and standard Scala tools are installed on your system.
@@ -52,14 +50,14 @@ Install it on your system with the following instructions.
 {% tab macOS for=install-cs-setup-tabs %}
 Run the following command in your terminal, following the on-screen instructions:
 ```
-{{site}}
+{{site.setup-scala.macOS-brew}}
 ```
 setup-scala.macOS-brew
 
 {% altDetails cs-setup-macos-nobrew 'Alternatively for Apple Silicon, or if you dont use Homebrew:'  %}
 On the Apple Silicon (M1, M2, …) architecture:
 ```
-{{site['setup-scala'].macOS-arm64}} 
+{{site['setup-scala']['macOS-arm64']}} 
 ```
 Otherwise, on the x86-64 architecture:
 ```
@@ -76,7 +74,7 @@ Otherwise, on the x86-64 architecture:
   Run the following command in your terminal, following the on-screen instructions.
   On the x86-64 architecture:
   ```
-  {{site.data['setup-scala'].linux-x86-64}} 
+  {{site.data['setup-scala']['linux-x86-64']}} 
   ```
   Otherwise, on the ARM64 architecture:
   ```

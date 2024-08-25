@@ -14,7 +14,7 @@ pages = [{"l":"index.html#","e":false,"i":"","n":"Scala Docs","t":"Scala Docs","
 {"l":"docs/getting-started/intellij-track/building-a-scala-project-with-intellij-and-sbt.html#","e":false,"i":"","n":"Building a Scala Project with IntelliJ and sbt","t":"Building a Scala Project with IntelliJ and sbt","d":"","k":"static","x":""},
 {"l":"docs/getting-started/intellij-track/getting-started-with-scala-in-intellij.html#","e":false,"i":"","n":"Getting Started with Scala in IntelliJ","t":"Getting Started with Scala in IntelliJ","d":"","k":"static","x":""},
 {"l":"docs/getting-started/intellij-track/testing-scala-in-intellij-with-scalatest.html#","e":false,"i":"","n":"Testing Scala in IntelliJ with ScalaTest","t":"Testing Scala in IntelliJ with ScalaTest","d":"","k":"static","x":""},
-{"l":"docs/scaladoc/index.html#","e":false,"i":"","n":"index","t":"index","d":"","k":"static","x":""},
+{"l":"docs/scaladoc/index.html#","e":false,"i":"","n":"Scaladoc","t":"Scaladoc","d":"","k":"static","x":""},
 {"l":"docs/scaladoc/contribute.html#","e":false,"i":"","n":"Contributing to Scaladoc","t":"Contributing to Scaladoc","d":"","k":"static","x":""},
 {"l":"docs/scaladoc/generate.html#","e":false,"i":"","n":"Generating Scaladoc","t":"Generating Scaladoc","d":"","k":"static","x":""},
 {"l":"docs/scaladoc/overview.html#","e":false,"i":"","n":"Overview","t":"Overview","d":"","k":"static","x":""},

@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(doc, Some(cc8320d8-322b-4531-8fee-abb65098984c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / doc[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/saiprasad/Documents/GSOC/scaladocsitebuilder/target/scala-3.5.1-RC1-bin-SNAPSHOT/classes ...[0m

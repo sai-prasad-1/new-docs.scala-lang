@@ -2,7 +2,7 @@
 layout : main
 ---
 
-
+<link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
 <div class="site-container">
 	<div id="site-header"></div>
 	{% if site.data.messages %}
@@ -10,13 +10,14 @@ layout : main
 	  <div class='icon'></div>
 	  <div class='content'>
 	  {{site.data.messages.scamBanner}}
+
+	  
 	  </div>
 	</aside>
 	{% endif %} 
-	<div class="utility-bar">
-		{% if page.languages %}{% language_picker languages=page.languages%}{% endif %}
-
-		{{page.languages}}
+	<div class="langauge-picker-container">
+		{% if page.languages %}<label for="language-selector" class="language-selector-label">Select Language:</label>
+		{% language_picker languages=page.languages%}{% endif %}
 	</div>
 	{{ content }}
 	<div class="divider" />

@@ -3,6 +3,7 @@ title: Intellij で sbt を使って Scala プロジェクトをビルドする
 layout: singlepage-overview
 partof: building-a-scala-project-with-intellij-and-sbt
 language: ja
+languages: [ja, ru, uk]
 disqus: true
 previous-page: /ja/getting-started/intellij-track/getting-started-with-scala-in-intellij
 next-page: /ja/testing-scala-in-intellij-with-scalatest

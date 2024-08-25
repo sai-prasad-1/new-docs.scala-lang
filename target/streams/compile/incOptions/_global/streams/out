@@ -1,2 +1,29 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/saiprasad/Documents/GSOC/scaladocsitebuilder/target/scala-3.5.1-RC1-bin-SNAPSHOT/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StringUtils$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/saiprasad/Documents/GSOC/scaladocsitebuilder/target/scala-3.5.1-RC1-bin-SNAPSHOT/classes.bak[0m

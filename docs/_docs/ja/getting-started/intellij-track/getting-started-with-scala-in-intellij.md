@@ -3,6 +3,7 @@ title: Intellij で Scala を始める
 layout: singlepage-overview
 partof: getting-started-with-scala-in-intellij
 language: ja
+languages: [ja, ru, uk]
 disqus: true
 next-page: /ja/building-a-scala-project-with-intellij-and-sbt
 ---
